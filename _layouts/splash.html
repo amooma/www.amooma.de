@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% include head.html %}
+
+  <style>
+  {% include css/pure-min.css %}
+  {% include css/grids-responsive-min.css %}
+  {% include css/main-with-splash.css %}
+  {% include css/sprites.css %}
+  </style>
+</head>
+
+  <body>
+    {% include svg_icons.html %}
+    {% include navbar.html %}
+
+    {% if page.slash_head %}
+    <div class="splash-container">
+      <div class="splash">
+        <h1 class="splash-head">{{ page.slash_head }}</h1>
+        <p class="splash-subhead">
+          {{ page.slash_subhead }}
+        </p>
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="content-wrapper">
+      {{ content }}
+      {% include footer.html %}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% include head.html %}
+
+  <style>
+  {% include css/pure-min.css %}
+  {% include css/grids-responsive-min.css %}
+  {% include css/main.css %}
+  {% include css/sprites.css %}
+  </style>
+</head>
+
+  <body>
+    {% include svg_icons.html %}
+    {% include navbar.html %}
+
+    <div class="content-wrapper">
+      {{ content }}
+      {% include footer.html %}
+    </div>
+  </body>
+</html>

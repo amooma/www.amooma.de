@@ -1,0 +1,14 @@
+# Site settings
+title: AMOOMA GmbH
+email: info@amooma.de
+description: > # this means to ignore newlines until "baseurl:"
+  Homepage der AMOOMA GmbH. Wir bieten Consulting und Training zu
+  den Themen Ruby on Rails, Ember.js und Webperformance (PageSpeed)
+  an.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.amooma.de" # the base hostname & protocol for your site
+twitter_username: wintermeyer
+github_username:  wintermeyer
+
+# Build settings
+markdown: kramdown
