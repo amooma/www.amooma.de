@@ -19,9 +19,11 @@
     <div class="splash-container">
       <div class="splash">
         <h1 class="splash-head">{{ page.slash_head }}</h1>
+        {% if page.slash_subhead %}
         <p class="splash-subhead">
           {{ page.slash_subhead }}
         </p>
+        {% endif %}
       </div>
     </div>
     {% endif %}
