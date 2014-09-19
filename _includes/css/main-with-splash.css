@@ -99,6 +99,10 @@ a.pure-button-primary {
 .home-menu a {
     color: #6FBEF3;
 }
+.home-menu li a {
+  line-height: 40px;
+}
+
 .home-menu li a:hover,
 .home-menu li a:focus {
     background: none;
