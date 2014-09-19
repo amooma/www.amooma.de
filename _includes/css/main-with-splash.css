@@ -130,8 +130,8 @@ a.pure-button-primary {
 
 .splash {
     /* absolute center .splash within .splash-container */
-    width: 80%;
-    height: 50%;
+    width: 100%;
+    height: auto;
     margin: auto;
     position: absolute;
     top: 5px; left: 0; bottom: 0; right: 0;
@@ -140,13 +140,26 @@ a.pure-button-primary {
 
 /* This is the main heading that appears on the blue section */
 .splash-head {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    padding: 1em 1.6em;
-    font-weight: 100;
-    border-radius: 5px;
-    line-height: 1em;
+    height: 100%;
+    margin: 0px auto 0px auto;
+    vertical-align: middle;
+    width: 90%;
+    top: 20%;
+}
+
+.splash-head h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-weight: 100;
+}
+
+@media (min-width: 0px) {
+  .splash-head h1 {
+    font-size: 40px;
+    line-height: 60px;
+    margin-top: 190px;
+  }
 }
 
 /* This is the subheading that appears on the blue section */
@@ -246,42 +259,18 @@ a.pure-button-primary {
     .home-menu {
         text-align: left;
     }
-        .home-menu ul {
-            float: right;
-        }
-
-    /* We increase the height of the splash-container */
-/*    .splash-container {
-        height: 500px;
-    }*/
-
-    /* We decrease the width of the .splash, since we have more width
-    to work with */
-    .splash {
-        width: 50%;
-        height: 50%;
+    .home-menu ul {
+        float: right;
     }
-
-    .splash-head {
-        font-size: 250%;
-    }
-
 
     /* We remove the border-separator assigned to .l-box-lrg */
     .l-box-lrg {
         border: none;
     }
-
 }
 
-/*
- * -- DESKTOP (AND UP) MEDIA QUERIES --
- * On desktops and other large devices, we want to over-ride some
- * of the mobile and tablet styles.
- */
-@media (min-width: 78em) {
-    /* We increase the header font size even more */
-    .splash-head {
-        font-size: 300%;
-    }
+@media (min-width: 0px) {
+  .splash-head {
+    font-size: 60px;
+  }
 }
