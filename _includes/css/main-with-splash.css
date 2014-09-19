@@ -193,6 +193,10 @@ a.pure-button-primary {
     color: #aaa;
 }
 
+.ribbon a {
+  color: #6fbad9;
+}
+
 /*
  * -- BUTTON --
  * Styles for the "Choose" button.
@@ -211,6 +215,10 @@ a.pure-button-primary {
 /* This is the class used for the footer */
 .footer {
     background: #111;
+}
+
+.footer a {
+  color: #ffffff;
 }
 
 /*
