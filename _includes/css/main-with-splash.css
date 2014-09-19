@@ -117,7 +117,9 @@ a.pure-button-primary {
  */
 
 .splash-container {
-    background: #1f8dd6;
+    background-image: url('images/beach.jpg');
+    background-size: auto 200%;
+    background-position: 50% 25%;
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
@@ -130,6 +132,7 @@ a.pure-button-primary {
 
 .splash {
     /* absolute center .splash within .splash-container */
+    display: table;
     width: 100%;
     height: auto;
     margin: auto;
@@ -140,6 +143,7 @@ a.pure-button-primary {
 
 /* This is the main heading that appears on the blue section */
 .splash-head {
+  display: table-cell;
     height: 100%;
     margin: 0px auto 0px auto;
     vertical-align: middle;
@@ -148,17 +152,26 @@ a.pure-button-primary {
 }
 
 .splash-head h1 {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: bold;
   color: white;
   font-weight: 100;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-@media (min-width: 0px) {
+@media (min-width: 615px) {
   .splash-head h1 {
-    font-size: 40px;
-    line-height: 60px;
-    margin-top: 190px;
+    margin: 70px 0px 0px 0px;
+    font-size: 50px;
+    line-height: 70px;
+  }
+}
+
+@media (max-width: 615px) {
+  .splash-head h1 {
+    margin: 100px 0px 0px 0px;
+    font-size: 30px;
+    line-height: 36px;
   }
 }
 
