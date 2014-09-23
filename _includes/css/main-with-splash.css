@@ -117,7 +117,7 @@ a.pure-button-primary {
  */
 
 .splash-container {
-    background-image: url('images/beach.jpg');
+    background-image: url({{ 'beach.jpg' | asset_path }});
     background-size: auto 200%;
     background-position: 50% 25%;
     z-index: 1;
