@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="dns-prefetch" href="www.google-analytics.com">
+  <link rel="dns-prefetch" href="stats.g.doubleclick.net">
+  <link rel="subresource" href="{{ 'sw-avatar.jpg' | asset_path }}">
+  <link rel="subresource" href="{{ 'beach.jpg' | asset_path }}">
   {% include head.html %}
 
   <style>
@@ -9,7 +13,6 @@
   {% include css/main-with-splash.css %}
   {% include css/sprites.css %}
   </style>
-  {% include google_tracking_code.html %}
 </head>
 
   <body>
@@ -30,5 +33,6 @@
       {{ content }}
       {% include footer.html %}
     </div>
+  {% include google_tracking_code.html %}
   </body>
 </html>
