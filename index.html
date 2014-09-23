@@ -55,9 +55,16 @@ permalink: /
         <svg class="icon icon-feed" viewBox="0 0 32 32"><use xlink:href="#icon-feed"></use></svg>
         Blog
       </h3>
-      <ul>
-        <li>test</li>
-        <li>test 2</li>
+      <ul class="post-list">
+        {% for post in site.posts %}
+          <li>
+            <span class="post-meta"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</span></a>
+            <br />
+            <small>{{ post.date | date: "%b %-d, %Y" }}</small>
+            <br />
+            <small>{{ post.abstract }}</small>
+          </li>
+        {% endfor %}
       </ul>
     </div>
   </div>
