@@ -10,6 +10,7 @@ We use [Jekyll](http://jekyllrb.com/) to render the HTML.
 
 ```
 $ gem install jekyll
+$ gem install jekyll-assets
 $ git clone git@github.com:amooma/www.amooma.de.git
 $ cd www.amooma.de
 $ jekyll server
