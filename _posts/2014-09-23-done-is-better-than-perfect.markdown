@@ -9,7 +9,7 @@ email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de
 abstract: Unsere neue Homepage ist online und als Quellcode auf Github abrufbar.
 ---
-Die aktuelle Webseite gefällt einem ja fast nie 100%ig. Da gibt es immer hier und dort ein paar Sachen, die man gerne besser/anders hätte. So ist das auch mit amooma.de. Ausserdem wollte ich schon seit langem wieder ein kleines Blog veröffentlichen. Deshalb gibt es jetzt einen neuen Webauftritt.
+Die eigene Webseite gefällt einem ja fast nie 100%ig. Da gibt es immer hier und dort ein paar Sachen, die man gerne besser/anders hätte. So ist das auch mit amooma.de. Ausserdem wollte ich schon seit langem wieder ein kleines Blog veröffentlichen. Deshalb gibt es jetzt einen neuen Webauftritt.
 
 Die AMOOMA Webseite wird von mir erdacht, geplant, gebaut und dann auch deployed. Chefsache. Full disclosure: Beim Thema CSS habe ich externe Hilfe eingekauft.
 
