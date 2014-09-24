@@ -131,20 +131,17 @@ a.pure-button-primary {
     /* absolute center .splash within .splash-container */
     display: table;
     width: 100%;
-    height: auto;
+    height: 300px;
     margin: auto;
-    top: 5px; left: 0; bottom: 0; right: 0;
     text-align: center;
 }
 
 /* This is the main heading that appears on the blue section */
 .splash-head {
   display: table-cell;
-    height: 100%;
-    margin: 0px auto 0px auto;
-    vertical-align: middle;
-    width: 90%;
-    top: 20%;
+  height: 300px;
+  vertical-align: middle;
+  width: 90%;
 }
 
 .splash-head h1 {
@@ -157,7 +154,7 @@ a.pure-button-primary {
 
 @media (min-width: 615px) {
   .splash-head h1 {
-    margin: 70px 0px 0px 0px;
+    margin: 70px 10px 0px 10px;
     font-size: 50px;
     line-height: 70px;
   }
@@ -165,7 +162,7 @@ a.pure-button-primary {
 
 @media (max-width: 615px) {
   .splash-head h1 {
-    margin: 100px 0px 0px 0px;
+    margin: 0px 10px 0px 10px;
     font-size: 36px;
     line-height: 46px;
   }
