@@ -154,7 +154,7 @@ a.pure-button-primary {
 
 @media (min-width: 615px) {
   .splash-head h1 {
-    margin: 70px 10px 0px 10px;
+    margin: 0px 10px 0px 10px;
     font-size: 50px;
     line-height: 70px;
   }
