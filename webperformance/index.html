@@ -48,8 +48,18 @@ permalink: /webperformance/
           Blog
         </h3>
         <p>
-          In diesem Bereich veröffentlichen wir in Zukunft unsere Blog-Einträge zum Thema Webperformance und PageSpeed-Optimierung.
+          In diesem Bereich veröffentlichen wir Blog-Einträge zum Thema Webperformance und PageSpeed-Optimierung.
         </p>
+        <ul class="post-list">
+          {% for post in site.tags.WebPerf limit:6 %}
+            <li>
+              <span class="post-meta"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</span></a>
+
+              <br />
+              <small>{{ post.abstract }}</small>
+            </li>
+          {% endfor %}
+        </ul>
       </div>
     </div>
   </div>
