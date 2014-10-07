@@ -1,54 +1,57 @@
 .post {
-    padding-bottom: 2em;
+  padding-bottom: 2em;
 }
 .post-title {
-    font-size: 2em;
-    color: #222;
-    margin-bottom: 0.2em;
+  font-size: 2em;
+  color: #222;
+  margin-bottom: 0.2em;
 }
 .post-avatar {
-    border-radius: 30px;
-    float: right;
-    margin-left: 1em;
+  border-radius: 30px;
+  float: right;
+  margin-left: 1em;
 }
 .post-description {
-    font-family: Georgia, "Cambria", serif;
-    color: #444;
-    line-height: 1.8em;
+  font-family: Georgia, "Cambria", serif;
+  color: #444;
+  line-height: 1.8em;
 }
 .post-meta {
-    color: #999;
-    font-size: 90%;
-    margin: 0;
+  color: #999;
+  font-size: 90%;
+  margin: 0;
 }
 
 .post-category {
-    margin: 0 0.1em;
-    padding: 0.3em 1em;
-    color: #fff;
-    background: #999;
-    font-size: 80%;
-    text-decoration: none;
+  margin: 0 0.1em;
+  padding: 0.3em 1em;
+  color: #fff;
+  background: #999;
+  font-size: 80%;
+  text-decoration: none;
 }
-    .post-category-WebPerf {
-        background: #5aba59;
-    }
-    .post-category-AMOOMA {
-        background: #4d85d1;
-    }
-    .post-category-HTML {
-        background: #8156a7;
-    }
-    .post-category-CSS {
-        background: #df2d4f;
-    }
+.post-category-WebPerf {
+  background: #5aba59;
+}
+.post-category-AMOOMA {
+  background: #4d85d1;
+}
+.post-category-HTML {
+  background: #8156a7;
+}
+.post-category-CSS {
+  background: #df2d4f;
+}
+.post-category-SEO {
+  background: #7d26cd;
+}
 
 .post-images {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 .post-image-meta {
-    margin-top: -3.5em;
-    margin-left: 1em;
-    color: #fff;
-    text-shadow: 0 1px 1px #333;
+  margin-top: -3.5em;
+  margin-left: 1em;
+  color: #fff;
+  text-shadow: 0 1px 1px #333;
 }
