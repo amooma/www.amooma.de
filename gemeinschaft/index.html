@@ -8,7 +8,7 @@ description: Gemeinschaft VoIP Telefonanlage
   <h2 class="content-head is-center">Gemeinschaft</h2>
 
   <div class="pure-g">
-    <div class="l-box pure-u-1 pure-u-md-1-1 pure-u-lg-1-1">
+    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
       <h3 class="content-subhead">Gemeinschaft PBX (Telefonanlage)</h3>
       <p>
         2008 veröffentlichten wir die erste Version von Gemeinschaft. Seit dem Gemeinschaft die in Deutschland am häufigsten eingesetzte Open-Source Telefonanlage für mehr als 10 User.
@@ -39,6 +39,40 @@ description: Gemeinschaft VoIP Telefonanlage
             <li><a href="https://github.com/amooma/GS3">https://github.com/amooma/GS3</a></li>
           </ul>
         </li>
+      </ul>
+    </div>
+    <div class="l-box pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
+      <h3 class="content-subhead">
+        <svg class="icon icon-feed" viewBox="0 0 32 32"><use xlink:href="#icon-feed"></use></svg>
+        Blog
+      </h3>
+      <ul class="post-list">
+        {% for post in site.posts limit:3 %}
+          <li>
+            <span class="post-meta"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</span></a>
+            <br />
+            {% for tag in post.tags %}
+              <a class="post-category post-category-{{ tag }}" href="#">{{ tag }}</a>
+            {% endfor %}
+            <br />
+            <small>{{ post.abstract }}</small>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="l-box pure-u-1 pure-u-md-1-4 pure-u-lg-1-4">
+      <ul class="post-list">
+        {% for post in site.posts limit:3 offset:3 %}
+          <li>
+            <span class="post-meta"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</span></a>
+            <br />
+            {% for tag in post.tags %}
+              <a class="post-category post-category-{{ tag }}" href="#">{{ tag }}</a>
+            {% endfor %}
+            <br />
+            <small>{{ post.abstract }}</small>
+          </li>
+        {% endfor %}
       </ul>
     </div>
   </div>
