@@ -11,7 +11,7 @@ abstract: Eine Ladezeiten-Aufstellung einer deutschen Webseite von verschiedenen
 ---
 Wenn ich beim Thema Webperformance eine Sache immer und immer wieder erklären muss, dann ist es die immense Wichtigkeit einer geringen Latenz. Für IT-Laien: Glasfaserleitungen verbinden die einzelnen Länder bzw. Kontinente. Die Geschwindigkeit einer Glasfaserleitung ist durch die Lichtgeschwindigkeit begrenzt. Schneller geht nicht! Es macht deshalb keinen Sinn einen Server in den USA für deutsche Kunden zu benutzen. In diesem Posting zeige ich die gewaltigen Zeitunterschiede.
 
-Latenz ist die Zeit, die ein einzelnes Datenpaket vom Server zum Browser benötigt. Diese Zeit ist für die Geschwindigkeit einer Webseite viel **WICHTIGER**, als die Bandbreite.
+Latenz ist die Zeit, die ein einzelnes Datenpaket vom Server zum Browser benötigt. Diese Zeit ist für die Geschwindigkeit einer Webseite viel **WICHTIGER als die Bandbreite**.
 
 Anhand der `amooma.de` Webseite, die auf einem Webserver in Frankfurt am Main gehostet wird, habe ich mit [webpagetest.org](http://www.webpagetest.org) ein paar Tests mit Browsern in anderen Ländern durchgeführt. Man sieht, das Besucher in den USA doppelt so lange auf die gleiche Webseite warten müssen wie Besucher aus Deutschland. Dabei benötigen Besucher aus Los Angeles noch einmal mehr Zeit als Besucher aus New York. Besucher aus Australien und Neuseeland müssen besonders viel Zeit mitbringen.
 
