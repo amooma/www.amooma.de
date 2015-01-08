@@ -1,5 +1,2 @@
-_site/
-.sass-cache/
-.DS_Store
-/bin/*
-_drafts/
+_site
+.sass-cache

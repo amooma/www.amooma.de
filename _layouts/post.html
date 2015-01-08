@@ -1,27 +1,15 @@
 ---
 layout: default
 ---
-<div class="pure-g">
-  <div class="l-box pure-u-1 pure-u-md-1-1 pure-u-lg-1-1">
-    <section class="post">
-      <header class="post-header">
-        {% include sw-avatar.html %}
+<div class="post">
 
-        <h2 class="post-title">{{ page.title }}</h2>
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
 
-        <p class="post-meta">
-          {{ page.date | date: "%b %-d, %Y" }}{% if post.author %} von <a href="{{post.homepage}}" class="post-author">{{ page.author }}</a>{% endif %}{% if post.meta %} • {{ page.meta }}{% endif %}
+  <article class="post-content">
+    {{ content }}
+  </article>
 
-          {% for tag in page.tags %}
-          <a class="post-category post-category-{{ tag }}" href="#">{{ tag }}</a>
-          {% endfor %}
-
-        </p>
-      </header>
-
-      <div class="post-description">
-        {{ content }}
-      </div>
-    </section>
-  </div>
 </div>
