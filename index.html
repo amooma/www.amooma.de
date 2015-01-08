@@ -2,22 +2,68 @@
 layout: default
 ---
 
-<div class="home">
+<div class="content">
+  <div class="divider"></div>
+  <h1>Darf es auch ein wenig performanter sein?</h1>
+  <div class="divider"></div>
 
-  <h1 class="page-heading">Posts</h1>
+  <div class="column-3-1">
+    <p><strong>Performante Webapplikation</strong> sind unsere Kernkompetenz. Wir unterstützen Sie bei der Planung und Erstellung von neuen und bei der Verbesserung von bestehenden Webapplikationen. Vor-Ort und Remote. Bei Bedarf mit 24 x 7 Unterstützung.</p>
+  </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <div class="column-3-2">
+    <p><strong>Ruby on Rails</strong>, <strong>Ember.js</strong> und <strong>Phoenix</strong> sind die MVC Frameworks unserer Wahl. Bei statischen Webseiten setzen wir gerne auf Jekyll. Daten speichern wir in MySQL, PostgreSQL und Redis. Memcached ist der Cache unserer Wahl.</p>
+  </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <div class="column-3-3">
+    <p><strong>WebPerformance-Optimierung</strong> bieten wir unabhängig von der verwendeten Plattform und Programmiersprache an. Wir verbessern die Ladezeiten bestehender Webseiten und helfen Ihnen neue Webseiten direkt optimal zu erstellen.</p>
+  </div>
 </div>
+
+<div class="grey">
+  <div class="content blog">
+    <div class="column-2-1">
+      <div class="post">
+        <div></div>
+        <a class="title" href="{{ site.posts[0].url | prepend: site.baseurl }}">{{ site.posts[0].title }} <span>{{ site.posts[0].date | date: "%b %-d, %Y" }}</span></a>
+        <p>{{ site.posts[0].abstract }} <a class="post-link" href="{{ site.posts[0].url | prepend: site.baseurl }}">[Lesen]</a></p>
+        {% for tag in site.posts[0].tags %}
+          <a class="tag" href="#">{{ tag }}</a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="column-2-2">
+      <div class="post">
+        <div></div>
+        <a class="title" href="{{ site.posts[1].url | prepend: site.baseurl }}">{{ site.posts[1].title }} <span>{{ site.posts[1].date | date: "%b %-d, %Y" }}</span></a>
+        <p>{{ site.posts[1].abstract }} <a class="post-link" href="{{ site.posts[1].url | prepend: site.baseurl }}">[Lesen]</a></p>
+        {% for tag in site.posts[1].tags %}
+          <a class="tag" href="#">{{ tag }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="content bio">
+  <div class="stefan">
+    <div class="photo"></div>
+    <div class="signature"></div>
+  </div>
+  <div class="text">
+    <p>
+      Mein Name ist <strong>Stefan Wintermeyer</strong>. Ich bin Gründer und Geschäftsführer der AMOOMA GmbH, die ihren Sitz in Neuwied hat und mittlerweile 10 Jahre alt ist.
+    </p>
+    <p>
+      Ich freue mich sehr, das Sie sich für uns und unser Consulting-Angebot interessieren. Haben Sie eine Frage oder Anregung? Dann kontaktieren Sie mir bitte direkt per E-Mail an <a href="mailto:stefan.wintermeyer@amooma.de">stefan.wintermeyer@amooma.de</a>.
+    </p>
+  </div>
+</div>
+
+{% include talks.html %}
+
+{% include books.html %}
+
+{% include articles.html %}

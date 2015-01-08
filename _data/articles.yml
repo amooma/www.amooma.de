@@ -1,0 +1,13 @@
+- publication: iX
+  publication_url: http://www.heise.de/ix/
+  publisher: Heise
+  issue_number: "8/2013"
+  title: "Glühfaktor - Ember: JavaScript-Framework für Webanwendungen"
+  pdf_url: https://www.heise.de/artikel-archiv/ix/2013/08/130_Gluehfaktor
+
+- publication: "iX Developer JavaScript heute"
+  publication_url: http://shop.heise.de/katalog/ix-developer-javascript-heute-2014
+  publisher: Heise
+  issue_number: "1/2014"
+  title: "Nachglühen - Ember.js 1.1 im Einsatz"
+  article_url: http://www.heise.de/developer/artikel/Ember-js-1-1-im-Einsatz-2053975.html

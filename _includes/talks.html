@@ -1,0 +1,50 @@
+<div class="content list">
+
+  <div class="title">
+    <div></div>
+    <p><span>Vorträge</span></p>
+  </div>
+
+  {% for talk in site.data.talks %}
+
+    <div class="item">
+      <div class="image">
+        {% if talk.video_url %}
+          <a href="{{ talk.video_url }}"><img src="/gfx/video.jpg" /></a>
+        {% elsif talk.audio_url %}
+          <a href="{{ talk.audio_url }}">MP3</a>
+        {% endif %}
+      </div>
+
+      <div class="columns">
+        <div class="column slides">
+          {% if talk.slides_url %}
+          <p><a href="{{ talk.slides_url }}">Slides</a></p>
+          {% endif %}
+        </div>
+
+        <div class="column name">
+          <p>
+            {% if talk.video_url %}
+              <a href="{{ talk.video_url }}">{{ talk.title }}</a> <span><br />{{ talk.length }}</span>
+            {% elsif talk.audio_url %}
+              <a href="{{ talk.audio_url }}">{{ talk.title }}</a> <span><br     />{{ talk.length }}</span>
+            {% else %}
+              {{ talk.title }} <span><br />{{ talk.length }}</span>
+            {% endif %}
+          </p>
+        </div>
+
+        <div class="column conference">
+          <p><a href="{{ talk.conference_url }}">{{ talk.conference }}</a></p>
+        </div>
+
+        <div class="column location">
+          <p>{{ talk.city }} - {{ talk.country }}</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+  {% endfor %}
+</div>

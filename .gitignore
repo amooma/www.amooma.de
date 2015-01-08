@@ -1,2 +1,10 @@
 _site
 .sass-cache
+
+# OS X
+#
+.DS_Store
+
+# Deployment
+#
+bin/
