@@ -146,15 +146,15 @@ div.menu div.desktop {
   height: 30px;
   margin: 50px 0px 50px 0px;
   text-align: center; }
-  @media (max-width: 850px) {
+  @media (max-width: 925px) {
     div.menu div.desktop {
       display: none; } }
   div.menu div.desktop a {
     color: #3a4551;
     display: inline-block;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 30px;
-    margin: 0px 20px 0px 20px; }
+    margin: 0px 18px 0px 18px; }
   div.menu div.desktop a.logo {
     background: url('../gfx/logo.svg') no-repeat center center/100% 100%;
     height: 30px;
@@ -163,7 +163,7 @@ div.menu div.mobile {
   display: none;
   height: 22px;
   margin: 20px 0px 20px 0px; }
-  @media (max-width: 850px) {
+  @media (max-width: 925px) {
     div.menu div.mobile {
       display: block; } }
   div.menu div.mobile a.logo {
@@ -401,7 +401,7 @@ div.list div.item {
 div.list div.talk {
   min-height: 106px; }
 div.list div.article {
-  min-height: 80px; }
+  min-height: 70px; }
 
 /* ### FOOTER: ### */
 div.footer {
