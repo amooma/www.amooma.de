@@ -20,32 +20,31 @@ layout: default
   </div>
 </div>
 
-<div class="grey">
-  <div class="content blog">
-    <div class="column-2-1">
-      <div class="post">
-        <div></div>
-        <a class="title" href="{{ site.posts[0].url | prepend: site.baseurl }}">{{ site.posts[0].title }} <span>{{ site.posts[0].date | date: "%b %-d, %Y" }}</span></a>
-        <p>{{ site.posts[0].abstract }} <a class="post-link" href="{{ site.posts[0].url | prepend: site.baseurl }}">[Lesen]</a></p>
-        {% for tag in site.posts[0].tags %}
-          <a class="tag" href="#">{{ tag }}</a>
-        {% endfor %}
-      </div>
-    </div>
+<!-- The two newest posts. -->
+{% assign counter=0 %}
+{% for post in site.posts %}
+  {% assign counter=counter | plus:1 %}
+{% endfor %}
 
-    <div class="column-2-2">
-      <div class="post">
-        <div></div>
-        <a class="title" href="{{ site.posts[1].url | prepend: site.baseurl }}">{{ site.posts[1].title }} <span>{{ site.posts[1].date | date: "%b %-d, %Y" }}</span></a>
-        <p>{{ site.posts[1].abstract }} <a class="post-link" href="{{ site.posts[1].url | prepend: site.baseurl }}">[Lesen]</a></p>
-        {% for tag in site.posts[1].tags %}
-          <a class="tag" href="#">{{ tag }}</a>
-        {% endfor %}
+{% if counter > 1 %}
+  <div class="grey">
+    <div class="content blog">
+      {% for post in site.posts limit:2 %}
+      <div class="column-2-{% cycle '1', '2' %}">
+        <div class="post">
+          <div></div>
+          <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} <span>{{ post.date | date: "%b %-d, %Y" }}</span></a>
+          <p>{{ post.abstract }} <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">[Lesen]</a></p>
+          {% for tag in site.posts[0].tags %}
+            <a class="tag" href="#">{{ tag }}</a>
+          {% endfor %}
+        </div>
       </div>
+      {% endfor %}
+      <div class="clear"></div>
     </div>
-    <div class="clear"></div>
   </div>
-</div>
+{% endif %}
 
 <div class="content bio">
   <div class="stefan">

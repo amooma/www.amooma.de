@@ -1,9 +1,7 @@
 <!-- The last two posts which have a 'Rails' tag. -->
-{% assign has_ruby_on_rails_posts = false %}
 {% assign counter=0 %}
 {% for post in site.posts %}
   {% if post.tags contains 'Rails' %}
-    {% assign has_ruby_on_rails_posts = true %}
     {% assign counter=counter | plus:1 %}
   {% endif %}
 {% endfor %}
@@ -11,31 +9,17 @@
 {% if counter > 1 %}
   <div class="grey">
     <div class="content blog">
-
-      {% assign counter=0 %}
-      {% for post in site.posts %}
-        {% if post.tags contains 'Rails' %}
-          {% assign counter=counter | plus:1 %}
-          {% if counter == 1 %}
-            <div class="column-2-1">
-              <div class="post">
-                <div></div>
-                <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} <span>{{ post.date | date: "%b %-d, %Y" }}</span></a>
-                <p>{{ post.abstract }} <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">[Lesen]</a></p>
-              </div>
-            </div>
-          {% elsif counter == 2%}
-            <div class="column-2-2">
-              <div class="post">
-                <div></div>
-                <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} <span>{{ post.date | date: "%b %-d, %Y" }}</span></a>
-                <p>{{ post.abstract }} <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">[Lesen]</a></p>
-              </div>
-            </div>
-            <div class="clear"></div>
-          {% endif %}
-        {% endif %}
+      {% assign posts = site.tags.Rails %}
+      {% for post in posts limit:2 %}
+        <div class="column-2-{% cycle '1', '2' %}">
+          <div class="post">
+            <div></div>
+            <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} <span>{{ post.date | date: "%b %-d, %Y" }}</span></a>
+            <p>{{ post.abstract }} <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">[Lesen]</a></p>
+          </div>
+        </div>
       {% endfor %}
+      <div class="clear"></div>
     </div>
   </div>
 {% endif %}
