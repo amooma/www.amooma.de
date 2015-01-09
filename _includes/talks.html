@@ -8,12 +8,24 @@
   {% for talk in site.data.talks %}
 
     <div class="item">
-      <div class="image">
-        {% if talk.video_url %}
-          <a href="{{ talk.video_url }}"><img src="/gfx/video.jpg" /></a>
-        {% elsif talk.audio_url %}
-          <a href="{{ talk.audio_url }}">MP3</a>
-        {% endif %}
+      <div class="options">
+        <div class="video{% if talk.video_url %} available{% endif %}">
+          {% if talk.video_url %}
+            <a href="{{ talk.video_url }}"></a>
+          {% endif %}
+        </div>
+
+        <div class="audio{% if talk.audio_url %} available{% endif %}">
+          {% if talk.audio_url %}
+            <a href="{{ talk.audio_url }}"></a>
+          {% endif %}
+        </div>
+
+        <div class="slides{% if talk.slides_url %} available{% endif %}">
+          {% if talk.slides_url %}
+            <a href="{{ talk.slides_url }}"></a>
+          {% endif %}
+        </div>
       </div>
 
       <div class="columns">

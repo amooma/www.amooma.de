@@ -307,7 +307,7 @@ div.list div.item {
       font-size: 14px;
       font-weight: 500; }
   div.list div.item div.columns {
-    padding: 0px 0px 0px 80px; }
+    padding: 0px 0px 0px 112px; }
     @media (max-width: 650px) {
       div.list div.item div.columns {
         padding: 10px 10px 10px 90px; } }
@@ -333,16 +333,36 @@ div.list div.item {
           clear: both;
           float: none;
           width: 100%; } }
-  div.list div.item div.image {
+  div.list div.item div.options {
     left: 0px;
     overflow: hidden;
     position: absolute;
+    text-align: center;
     top: 0px;
-    width: 80px; }
-    @media (max-width: 650px) {
-      div.list div.item div.image {
-        left: 10px;
-        top: 10px; } }
+    width: 112px; }
+    div.list div.item div.options div.audio, div.list div.item div.options div.slides, div.list div.item div.options div.video {
+      cursor: pointer;
+      display: inline-block;
+      height: 16px;
+      opacity: 0.25; }
+      div.list div.item div.options div.audio a, div.list div.item div.options div.slides a, div.list div.item div.options div.video a {
+        display: block;
+        height: 100%;
+        width: 100%; }
+    div.list div.item div.options div.audio {
+      background: url('../gfx/audio.svg') no-repeat center center/100% 100%;
+      margin: 14px 5px 14px 0px;
+      width: 20px; }
+    div.list div.item div.options div.slides {
+      background: url('../gfx/slides.svg') no-repeat center center/100% 100%;
+      margin: 14px 5px 14px 0px;
+      width: 22px; }
+    div.list div.item div.options div.video {
+      background: url('../gfx/video.svg') no-repeat center center/100% 100%;
+      margin: 14px 5px 14px 5px;
+      width: 22px; }
+    div.list div.item div.options div.available {
+      opacity: 1; }
 
 /* ### FOOTER: ### */
 div.footer {
