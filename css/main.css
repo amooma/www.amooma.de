@@ -8,337 +8,347 @@
   padding: 0px;
   position: relative; }
 
-  body, html {
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: none;
-    -moz-osx-font-smoothing: grayscale;
-    height: auto;
-    width: 100%; }
+body, html {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  -moz-osx-font-smoothing: grayscale;
+  height: auto;
+  width: 100%; }
 
-    div.clear {
+div.clear {
+  clear: both;
+  height: 0px;
+  width: 100%; }
+
+div.column-2-1, div.column-2-2 {
+  float: left;
+  width: 48%; }
+  @media (max-width: 800px) {
+    div.column-2-1, div.column-2-2 {
       clear: both;
-      height: 0px;
-      width: 100%; }
+      float: none;
+      width: 100%; } }
 
-      div.column-2-1, div.column-2-2 {
-        float: left;
-        width: 48%; }
-        @media (max-width: 800px) {
-          div.column-2-1, div.column-2-2 {
-            clear: both;
-            float: none;
-            width: 100%; } }
+div.column-2-2 {
+  margin: 0px 0px 0px 4%; }
+  @media (max-width: 800px) {
+    div.column-2-2 {
+      margin: 0px; } }
 
-            div.column-2-2 {
-              margin: 0px 0px 0px 4%; }
-              @media (max-width: 800px) {
-                div.column-2-2 {
-                  margin: 0px; } }
+div.column-3-1, div.column-3-2, div.column-3-3 {
+  float: left;
+  margin: 40px 0px 40px 0px;
+  width: 32%; }
 
-                  div.column-3-1, div.column-3-2, div.column-3-3 {
-                    float: left;
-                    margin: 40px 0px 40px 0px;
-                    width: 32%; }
+@media (max-width: 800px) {
+  div.column-3-1 {
+    margin: 30px 2% 0px 0px;
+    width: 48%; } }
+@media (max-width: 500px) {
+  div.column-3-1 {
+    clear: both;
+    margin: 30px 0px 0px 0px;
+    width: 100%; } }
 
-                    @media (max-width: 800px) {
-                      div.column-3-1 {
-                        margin: 30px 2% 0px 0px;
-                        width: 48%; } }
-                        @media (max-width: 500px) {
-                          div.column-3-1 {
-                            clear: both;
-                            margin: 30px 0px 0px 0px;
-                            width: 100%; } }
+div.column-3-2 {
+  margin: 40px 2% 40px 2%; }
+  @media (max-width: 800px) {
+    div.column-3-2 {
+      margin: 30px 0px 0px 2%;
+      width: 48%; } }
+  @media (max-width: 500px) {
+    div.column-3-2 {
+      clear: both;
+      margin: 30px 0px 0px 0px;
+      width: 100%; } }
 
-                            div.column-3-2 {
-                              margin: 40px 2% 40px 2%; }
-                              @media (max-width: 800px) {
-                                div.column-3-2 {
-                                  margin: 30px 0px 0px 2%;
-                                  width: 48%; } }
-                                  @media (max-width: 500px) {
-                                    div.column-3-2 {
-                                      clear: both;
-                                      margin: 30px 0px 0px 0px;
-                                      width: 100%; } }
+@media (max-width: 800px) {
+  div.column-3-3 {
+    clear: both;
+    float: none;
+    margin: 0px 0px 30px 0px;
+    padding: 30px 0px 0px 0px;
+    width: 100%; } }
 
-                                      @media (max-width: 800px) {
-                                        div.column-3-3 {
-                                          clear: both;
-                                          float: none;
-                                          margin: 0px 0px 30px 0px;
-                                          padding: 30px 0px 0px 0px;
-                                          width: 100%; } }
+div.content {
+  clear: both;
+  margin: 0px auto 0px auto;
+  max-width: 900px;
+  width: 92%; }
 
-                                          div.content {
-                                            clear: both;
-                                            margin: 0px auto 0px auto;
-                                            max-width: 900px;
-                                            width: 92%; }
+div.divider {
+  background: #c4c7ca;
+  clear: both;
+  height: 1px;
+  width: 100%; }
 
-                                            div.divider {
-                                              background: #c4c7ca;
-                                              clear: both;
-                                              height: 1px;
-                                              width: 100%; }
+div.grey {
+  background: #eeeeee;
+  clear: both;
+  padding: 10px 0px 40px 0px; }
 
-                                              div.grey {
-                                                background: #eeeeee;
-                                                clear: both;
-                                                padding: 10px 0px 40px 0px; }
+/* ### LINKS, HEADERS, TEXT: ### */
+a, h1, p {
+  word-wrap: break-word; }
 
-                                                /* ### LINKS, HEADERS, TEXT: ### */
-                                                a, h1, p {
-                                                  word-wrap: break-word; }
+a {
+  color: #3798cd;
+  font-weight: 600;
+  text-decoration: none; }
 
-                                                  a {
-                                                    color: #3798cd;
-                                                    font-weight: 600;
-                                                    text-decoration: none; }
+div.text p {
+  padding-bottom: 20px; }
 
-                                                    div.text p {
-                                                      padding-bottom: 20px; }
+div.title div {
+  background: #c4c7ca;
+  height: 1px;
+  left: 0px;
+  position: absolute;
+  top: 16px;
+  width: 100%;
+  z-index: 1; }
+div.title p {
+  text-align: center;
+  z-index: 2; }
+  div.title p span {
+    background: #ffffff;
+    font-family: 'Georgia', 'Times New Roman', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 0px 20px 0px 20px; }
 
-                                                      div.title div {
-                                                        background: #c4c7ca;
-                                                        height: 1px;
-                                                        left: 0px;
-                                                        position: absolute;
-                                                        top: 16px;
-                                                        width: 100%;
-                                                        z-index: 1; }
-                                                        div.title p {
-                                                          text-align: center;
-                                                          z-index: 2; }
-                                                          div.title p span {
-                                                            background: #ffffff;
-                                                            font-family: 'Georgia', 'Times New Roman', sans-serif;
-                                                            font-size: 26px;
-                                                            font-weight: 300;
-                                                            line-height: 32px;
-                                                            padding: 0px 20px 0px 20px; }
+div.title-margin {
+  margin: 20px 0px 0px 0px; }
 
-                                                            h1 {
-                                                              color: #3a4551;
-                                                              font-family: 'Georgia', 'Times New Roman', sans-serif;
-                                                              font-size: 32px;
-                                                              font-weight: 300;
-                                                              line-height: 44px;
-                                                              margin: 40px 0px 40px 0px;
-                                                              text-align: center; }
-                                                              @media (max-width: 500px) {
-                                                                h1 {
-                                                                  font-size: 28px;
-                                                                  line-height: 40px;
-                                                                  margin: 30px 0px 30px 0px; } }
+h1 {
+  color: #3a4551;
+  font-family: 'Georgia', 'Times New Roman', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 44px;
+  margin: 40px 0px 40px 0px;
+  text-align: center; }
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 28px;
+      line-height: 40px;
+      margin: 30px 0px 30px 0px; } }
 
-                                                                  p {
-                                                                    color: #3a4551;
-                                                                    font-size: 18px;
-                                                                    font-weight: 400;
-                                                                    line-height: 24px; }
+p {
+  color: #3a4551;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px; }
 
-                                                                    /* ### MENU: ### */
-                                                                    div.menu div.desktop {
-                                                                      height: 30px;
-                                                                      margin: 50px 0px 50px 0px;
-                                                                      text-align: center; }
-                                                                      @media (max-width: 850px) {
-                                                                        div.menu div.desktop {
-                                                                          display: none; } }
-                                                                          div.menu div.desktop a {
-                                                                            color: #3a4551;
-                                                                            display: inline-block;
-                                                                            font-size: 18px;
-                                                                            line-height: 30px;
-                                                                            margin: 0px 20px 0px 20px; }
-                                                                            div.menu div.desktop a.logo {
-                                                                              background: url('/gfx/logo.svg') no-repeat center center/100% 100%;
-                                                                              height: 30px;
-                                                                              width: 178px; }
-                                                                              div.menu div.mobile {
-                                                                                display: none;
-                                                                                height: 22px;
-                                                                                margin: 20px 0px 20px 0px; }
-                                                                                @media (max-width: 850px) {
-                                                                                  div.menu div.mobile {
-                                                                                    display: block; } }
-                                                                                    div.menu div.mobile a.logo {
-                                                                                      background: url('/gfx/logo.svg') no-repeat center center/100% 100%;
-                                                                                      display: block;
-                                                                                      float: left;
-                                                                                      height: 22px;
-                                                                                      width: 130px; }
-                                                                                      div.menu div.mobile div.select {
-                                                                                        float: right;
-                                                                                        height: 22px; }
-                                                                                        div.menu div.mobile div.select div {
-                                                                                          background: url('/gfx/menu.svg') no-repeat center center/100% 100%;
-                                                                                          float: right;
-                                                                                          height: 16px;
-                                                                                          margin: 4px 0px 4px 10px;
-                                                                                          width: 16px; }
-                                                                                          div.menu div.mobile div.select p {
-                                                                                            display: block;
-                                                                                            float: right;
-                                                                                            font-size: 16px;
-                                                                                            font-weight: 600;
-                                                                                            line-height: 22px; }
-                                                                                            div.menu div.mobile div.select select {
-                                                                                              border: none;
-                                                                                              cursor: pointer;
-                                                                                              height: 100%;
-                                                                                              left: 0px;
-                                                                                              position: absolute;
-                                                                                              opacity: 0;
-                                                                                              top: 0px;
-                                                                                              width: 100%;
-                                                                                              z-index: 1; }
+/* ### MENU: ### */
+div.menu div.desktop {
+  height: 30px;
+  margin: 50px 0px 50px 0px;
+  text-align: center; }
+  @media (max-width: 850px) {
+    div.menu div.desktop {
+      display: none; } }
+  div.menu div.desktop a {
+    color: #3a4551;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0px 20px 0px 20px; }
+  div.menu div.desktop a.logo {
+    background: url('../gfx/logo.svg') no-repeat center center/100% 100%;
+    height: 30px;
+    width: 178px; }
+div.menu div.mobile {
+  display: none;
+  height: 22px;
+  margin: 20px 0px 20px 0px; }
+  @media (max-width: 850px) {
+    div.menu div.mobile {
+      display: block; } }
+  div.menu div.mobile a.logo {
+    background: url('../gfx/logo.svg') no-repeat center center/100% 100%;
+    display: block;
+    float: left;
+    height: 22px;
+    width: 130px; }
+  div.menu div.mobile div.select {
+    float: right;
+    height: 22px; }
+    div.menu div.mobile div.select div {
+      background: url('../gfx/menu.svg') no-repeat center center/100% 100%;
+      float: right;
+      height: 16px;
+      margin: 4px 0px 4px 10px;
+      width: 16px; }
+    div.menu div.mobile div.select p {
+      display: block;
+      float: right;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22px; }
+    div.menu div.mobile div.select select {
+      border: none;
+      cursor: pointer;
+      height: 100%;
+      left: 0px;
+      position: absolute;
+      opacity: 0;
+      top: 0px;
+      width: 100%;
+      z-index: 1; }
 
-                                                                                              /* ### BLOG: ### */
-                                                                                              div.blog div.post {
-                                                                                                padding: 30px 0px 0px 62px; }
-                                                                                                div.blog div.post a.tag {
-                                                                                                  background: #3798cd;
-                                                                                                  color: #ffffff;
-                                                                                                  display: block;
-                                                                                                  float: left;
-                                                                                                  font-size: 12px;
-                                                                                                  line-height: 12px;
-                                                                                                  margin: 10px 10px 0px 0px;
-                                                                                                  padding: 5px; }
-                                                                                                  div.blog div.post a.title {
-                                                                                                    font-size: 18px;
-                                                                                                    line-height: 24px; }
-                                                                                                    div.blog div.post a.title span {
-                                                                                                      color: #aaaaaa;
-                                                                                                      font-size: 14px;
-                                                                                                      font-weight: 500; }
-                                                                                                      div.blog div.post div {
-                                                                                                        background: url('/gfx/post.svg');
-                                                                                                        height: 44px;
-                                                                                                        left: 0px;
-                                                                                                        position: absolute;
-                                                                                                        top: 30px;
-                                                                                                        width: 42px; }
-                                                                                                        div.blog div.post p {
-                                                                                                          font-size: 14px;
-                                                                                                          line-height: 24px;
-                                                                                                          padding: 10px 0px 0px 0px; }
+/* ### BLOG: ### */
+div.blog div.post {
+  padding: 30px 0px 0px 62px; }
+  div.blog div.post a.tag {
+    background: #3798cd;
+    color: #ffffff;
+    display: block;
+    float: left;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 10px 10px 0px 0px;
+    padding: 5px; }
+  div.blog div.post a.title {
+    font-size: 18px;
+    line-height: 24px; }
+    div.blog div.post a.title span {
+      color: #aaaaaa;
+      font-size: 14px;
+      font-weight: 500; }
+  div.blog div.post div {
+    background: url('../gfx/post.svg');
+    height: 44px;
+    left: 0px;
+    position: absolute;
+    top: 30px;
+    width: 42px; }
+  div.blog div.post p {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 10px 0px 0px 0px; }
+div.blog p.read-more {
+  margin: 10px 0px -20px 0px;
+  text-align: center; }
+  div.blog p.read-more a {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 20px 0px 20px; }
 
-                                                                                                          /* ### BIO: ### */
-                                                                                                          div.bio {
-                                                                                                            margin: 40px auto 0px auto;
-                                                                                                            min-height: 191px; }
-                                                                                                            div.bio div.stefan {
-                                                                                                              height: 191px;
-                                                                                                              left: 0px;
-                                                                                                              position: absolute;
-                                                                                                              top: 0px;
-                                                                                                              width: 291px; }
-                                                                                                              @media (max-width: 550px) {
-                                                                                                                div.bio div.stefan {
-                                                                                                                  position: relative;
-                                                                                                                  left: none;
-                                                                                                                  margin: 0px auto 30px auto;
-                                                                                                                  top: none;
-                                                                                                                  width: 200px; } }
-                                                                                                                  div.bio div.stefan div.photo {
-                                                                                                                    background: url('/gfx/photo.jpg') no-repeat center center/100% 100%;
-                                                                                                                    left: 0px;
-                                                                                                                    height: 167px;
-                                                                                                                    position: absolute;
-                                                                                                                    top: 0px;
-                                                                                                                    width: 167px;
-                                                                                                                    z-index: 1; }
-                                                                                                                    @media (max-width: 550px) {
-                                                                                                                      div.bio div.stefan div.photo {
-                                                                                                                        left: 20px; } }
-                                                                                                                        div.bio div.stefan div.signature {
-                                                                                                                          background: url('/gfx/signature.png') no-repeat center center/100% 100%;
-                                                                                                                          height: 61px;
-                                                                                                                          left: 40px;
-                                                                                                                          position: absolute;
-                                                                                                                          top: 130px;
-                                                                                                                          width: 251px;
-                                                                                                                          z-index: 2; }
-                                                                                                                          @media (max-width: 950px) {
-                                                                                                                            div.bio div.stefan div.signature {
-                                                                                                                              height: 49px;
-                                                                                                                              left: -10px;
-                                                                                                                              top: 150px;
-                                                                                                                              width: 200px; } }
-                                                                                                                              @media (max-width: 550px) {
-                                                                                                                                div.bio div.stefan div.signature {
-                                                                                                                                  left: 0px; } }
-                                                                                                                                  div.bio div.text {
-                                                                                                                                    padding: 0px 0px 0px 200px; }
-                                                                                                                                    @media (max-width: 550px) {
-                                                                                                                                      div.bio div.text {
-                                                                                                                                        padding: 0px; } }
+/* ### BIO: ### */
+div.bio {
+  margin: 40px auto 0px auto;
+  min-height: 191px; }
+  div.bio div.stefan {
+    height: 191px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 291px; }
+    @media (max-width: 550px) {
+      div.bio div.stefan {
+        position: relative;
+        left: none;
+        margin: 0px auto 30px auto;
+        top: none;
+        width: 200px; } }
+    div.bio div.stefan div.photo {
+      background: url('../gfx/photo.jpg') no-repeat center center/100% 100%;
+      left: 0px;
+      height: 167px;
+      position: absolute;
+      top: 0px;
+      width: 167px;
+      z-index: 1; }
+      @media (max-width: 550px) {
+        div.bio div.stefan div.photo {
+          left: 20px; } }
+    div.bio div.stefan div.signature {
+      background: url('../gfx/signature.png') no-repeat center center/100% 100%;
+      height: 61px;
+      left: 40px;
+      position: absolute;
+      top: 130px;
+      width: 251px;
+      z-index: 2; }
+      @media (max-width: 950px) {
+        div.bio div.stefan div.signature {
+          height: 49px;
+          left: -10px;
+          top: 150px;
+          width: 200px; } }
+      @media (max-width: 550px) {
+        div.bio div.stefan div.signature {
+          left: 0px; } }
+  div.bio div.text {
+    padding: 0px 0px 0px 200px; }
+    @media (max-width: 550px) {
+      div.bio div.text {
+        padding: 0px; } }
 
-                                                                                                                                        /* ### LIST: ### */
-                                                                                                                                        div.list div.item {
-                                                                                                                                          background: #f4f4f4;
-                                                                                                                                          clear: both;
-                                                                                                                                          display: table;
-                                                                                                                                          margin: 20px 0px 0px 0px;
-                                                                                                                                          width: 100%; }
-                                                                                                                                          div.list div.item p {
-                                                                                                                                            font-size: 16px;
-                                                                                                                                            line-height: 24px;
-                                                                                                                                            padding: 10px;
-                                                                                                                                            text-align: left; }
-                                                                                                                                            @media (max-width: 650px) {
-                                                                                                                                              div.list div.item p {
-                                                                                                                                                padding: 0px 10px 0px 10px; } }
-                                                                                                                                                div.list div.item p span {
-                                                                                                                                                  color: #aaaaaa;
-                                                                                                                                                  font-size: 14px;
-                                                                                                                                                  font-weight: 500; }
-                                                                                                                                                  div.list div.item div.columns {
-                                                                                                                                                    padding: 0px 0px 0px 80px; }
-                                                                                                                                                    @media (max-width: 650px) {
-                                                                                                                                                      div.list div.item div.columns {
-                                                                                                                                                        padding: 10px 10px 10px 90px; } }
-                                                                                                                                                        div.list div.item div.columns div.name {
-                                                                                                                                                          width: 38%; }
-                                                                                                                                                          div.list div.item div.columns div.name br {
-                                                                                                                                                            display: none; }
-                                                                                                                                                            @media (max-width: 850px) {
-                                                                                                                                                              div.list div.item div.columns div.name br {
-                                                                                                                                                                display: inline; } }
-                                                                                                                                                                div.list div.item div.columns div.conference {
-                                                                                                                                                                  width: 22%; }
-                                                                                                                                                                  div.list div.item div.columns div.conference p a {
-                                                                                                                                                                    color: #3a4551; }
-                                                                                                                                                                    div.list div.item div.columns div.location {
-                                                                                                                                                                      width: 40%; }
-                                                                                                                                                                      div.list div.item div.columns div.location p {
-                                                                                                                                                                        color: #aaaaaa; }
-                                                                                                                                                                        div.list div.item div.columns div.column {
-                                                                                                                                                                          float: left; }
-                                                                                                                                                                          @media (max-width: 650px) {
-                                                                                                                                                                            div.list div.item div.columns div.column {
-                                                                                                                                                                              clear: both;
-                                                                                                                                                                              float: none;
-                                                                                                                                                                              width: 100%; } }
-                                                                                                                                                                              div.list div.item div.image {
-                                                                                                                                                                                left: 0px;
-                                                                                                                                                                                overflow: hidden;
-                                                                                                                                                                                position: absolute;
-                                                                                                                                                                                top: 0px;
-                                                                                                                                                                                width: 80px; }
-                                                                                                                                                                                @media (max-width: 650px) {
-                                                                                                                                                                                  div.list div.item div.image {
-                                                                                                                                                                                    left: 10px;
-                                                                                                                                                                                    top: 10px; } }
+/* ### LIST: ### */
+div.list div.item {
+  background: #f4f4f4;
+  clear: both;
+  display: table;
+  margin: 20px 0px 0px 0px;
+  width: 100%; }
+  div.list div.item p {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px;
+    text-align: left; }
+    @media (max-width: 650px) {
+      div.list div.item p {
+        padding: 0px 10px 0px 10px; } }
+    div.list div.item p span {
+      color: #aaaaaa;
+      font-size: 14px;
+      font-weight: 500; }
+  div.list div.item div.columns {
+    padding: 0px 0px 0px 80px; }
+    @media (max-width: 650px) {
+      div.list div.item div.columns {
+        padding: 10px 10px 10px 90px; } }
+    div.list div.item div.columns div.name {
+      width: 38%; }
+      div.list div.item div.columns div.name br {
+        display: none; }
+        @media (max-width: 850px) {
+          div.list div.item div.columns div.name br {
+            display: inline; } }
+    div.list div.item div.columns div.conference {
+      width: 22%; }
+      div.list div.item div.columns div.conference p a {
+        color: #3a4551; }
+    div.list div.item div.columns div.location {
+      width: 40%; }
+      div.list div.item div.columns div.location p {
+        color: #aaaaaa; }
+    div.list div.item div.columns div.column {
+      float: left; }
+      @media (max-width: 650px) {
+        div.list div.item div.columns div.column {
+          clear: both;
+          float: none;
+          width: 100%; } }
+  div.list div.item div.image {
+    left: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    width: 80px; }
+    @media (max-width: 650px) {
+      div.list div.item div.image {
+        left: 10px;
+        top: 10px; } }
 
-                                                                                                                                                                                    /* ### FOOTER: ### */
-                                                                                                                                                                                    div.footer {
-                                                                                                                                                                                      margin: 40px auto 40px auto; }
-                                                                                                                                                                                      div.footer p {
-                                                                                                                                                                                        font-size: 16px;
-                                                                                                                                                                                        line-height: 22px;
-                                                                                                                                                                                        padding: 20px 0px 0px 0px;
-                                                                                                                                                                                        text-align: center; }
+/* ### FOOTER: ### */
+div.footer {
+  margin: 40px auto 40px auto; }
+  div.footer p {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 20px 0px 0px 0px;
+    text-align: center; }

@@ -1,6 +1,6 @@
 <div class="content list">
 
-  <div class="title">
+  <div class="title title-margin">
     <div></div>
     <p><span>Bücher</span></p>
   </div>
@@ -10,19 +10,15 @@
   <div class="item">
     <div class="columns">
       <div class="column name">
-        <p>{{ book.title }}</p>
+        <p><a href="{{ book.book_url }}">{{ book.title }}</a></p>
       </div>
 
       <div class="column conference">
-        <p>{{ book.isbn }}</p>
+        <p><a href="{{ book.amazon_url }}">Bei Amazon bestellen</a></p>
       </div>
 
       <div class="column location">
-        <p><a href="{{ book.amazon_url }}">Bei Amazon bestellen.</a></p>
-      </div>
-
-      <div class="column online">
-        <p><a href="{{ book.book_url }}">Online Version.</a></p>
+        <p>ISBN: {{ book.isbn }}</p>
       </div>
     </div>
     <div class="clear"></div>
