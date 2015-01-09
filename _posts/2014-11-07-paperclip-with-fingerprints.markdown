@@ -3,7 +3,7 @@ layout: post
 title: "Paperclip with Fingerprints"
 lang: en
 date: 2014-11-07 10:00:00
-tags: Rails WebPerf
+tags: Rails
 author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de
