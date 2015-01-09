@@ -8,13 +8,21 @@
   {% for book in site.data.books %}
 
   <div class="item">
+    <div class="options">
+      <div class="amazon{% if book.amazon_url %} available{% endif %}">
+        {% if book.amazon_url %}
+        <a href="{{ book.amazon_url }}"></a>
+        {% endif %}
+      </div>
+    </div>
+
     <div class="columns">
       <div class="column name">
-        <p><a href="{{ book.book_url }}">{{ book.title }}</a></p>
+        <p><a href="{{ book.book_url }}">{{ book.title }}</a>{% if book.subtitle %} <span>{{ book.subtitle }}</span>{% endif %}</p>
       </div>
 
       <div class="column conference">
-        <p><a href="{{ book.amazon_url }}">Bei Amazon bestellen</a></p>
+        <p><a href="{{ book.amazon_url }}">Bestellen</a></p>
       </div>
 
       <div class="column location">

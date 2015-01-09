@@ -340,25 +340,33 @@ div.list div.item {
     text-align: center;
     top: 0px;
     width: 112px; }
-    div.list div.item div.options div.audio, div.list div.item div.options div.slides, div.list div.item div.options div.video {
+    div.list div.item div.options div.amazon, div.list div.item div.options div.audio, div.list div.item div.options div.slides, div.list div.item div.options div.video {
       cursor: pointer;
       display: inline-block;
-      height: 16px;
       opacity: 0.25; }
-      div.list div.item div.options div.audio a, div.list div.item div.options div.slides a, div.list div.item div.options div.video a {
+      div.list div.item div.options div.amazon a, div.list div.item div.options div.audio a, div.list div.item div.options div.slides a, div.list div.item div.options div.video a {
         display: block;
         height: 100%;
         width: 100%; }
+    div.list div.item div.options div.amazon {
+      background: url('../gfx/amazon.svg') no-repeat center center/100% 100%;
+      cursor: pointer;
+      height: 20px;
+      margin: 13px 0px 12px 0px;
+      width: 66px; }
     div.list div.item div.options div.audio {
       background: url('../gfx/audio.svg') no-repeat center center/100% 100%;
+      height: 16px;
       margin: 14px 5px 14px 0px;
       width: 20px; }
     div.list div.item div.options div.slides {
       background: url('../gfx/slides.svg') no-repeat center center/100% 100%;
+      height: 16px;
       margin: 14px 5px 14px 0px;
       width: 22px; }
     div.list div.item div.options div.video {
       background: url('../gfx/video.svg') no-repeat center center/100% 100%;
+      height: 16px;
       margin: 14px 5px 14px 5px;
       width: 22px; }
     div.list div.item div.options div.available {
