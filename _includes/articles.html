@@ -6,30 +6,32 @@
   </div>
 
   {% for article in site.data.articles %}
-    <div class="item">
+    <div class="item article">
+      <div class="options">
+        <div class="online{% if article.article_url %} available{% endif %}">
+          {% if article.article_url %}
+          <a href="{{ article.article_url }}"></a>
+          {% endif %}
+        </div>
+
+        <div class="pdf{% if article.pdf_url %} available{% endif %}">
+          {% if article.pdf_url %}
+          <a href="{{ article.pdf_url }}"></a>
+          {% endif %}
+        </div>
+      </div>
+
       <div class="columns">
-        <div class="column publication">
+        <div class="column name">
+          <p><a href="{{ article.publication_url }}">{{ article.title }}</a></p>
+        </div>
+
+        <div class="column conference">
           <p><a href="{{ article.publication_url }}">{{ article.publication }}</a></p>
         </div>
 
-        <div class="column publisher">
-          <p>{{ article.publisher }}</p>
-        </div>
-
-        <div class="column issue_number">
-          <p>{{ article.issue_number }}</p>
-        </div>
-
-        <div class="column title">
-          <p>{{ article.title }}</p>
-        </div>
-
-        <div class="column link">
-          {% if article.pdf_url %}
-            <a href="{{ article.pdf_url }}">PDF Download</a>
-          {% elsif article.article_url %}
-            <a href="{{ article.article_url }}">HTML Version</a>
-          {% endif %}
+        <div class="column location">
+          <p>{{ article.publisher }} - {{ article.issue_number }}</p>
         </div>
       </div>
       <div class="clear"></div>
