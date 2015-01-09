@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Ruby 2.2.0 Time#parse TZ-related regression"
+lang: en
+date: 2015-01-09 18:00:00
+tags: Rails Ruby
+author: Stefan Wintermeyer
+email: stefan.wintermeyer@amooma.de
+homepage: http://www.wintermeyer.de
+abstract: "Time#parse Problem"
+---
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis quis ex et congue. Mauris pretium, elit quis mollis ornare, ipsum augue feugiat lectus, at accumsan nisl urna eu elit. Vestibulum nec purus vitae ligula sodales aliquet. Donec eu imperdiet ex. Praesent lorem quam, viverra lobortis metus et, imperdiet mattis.
+
+https://byparker.com/blog/2014/ruby-2-2-0-time-parse-localtime-regression/
