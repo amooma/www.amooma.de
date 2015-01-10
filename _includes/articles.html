@@ -1,40 +1,77 @@
-<div class="content list">
+{% comment %}
+To display a table of all articles use
+  {% include articles.html %}
 
-  <div class="title title-margin">
-    <div></div>
-    <p><span>Artikel in Fachzeitschriften</span></p>
-  </div>
+To display a table of all articles taged by 'Foo' use
+  {% include articles.html tag='Foo' %}
 
-  {% for article in site.data.articles %}
-    <div class="item article">
-      <div class="options">
-        <div class="online{% if article.article_url %} available{% endif %}">
-          {% if article.article_url %}
-          <a href="{{ article.article_url }}"></a>
-          {% endif %}
-        </div>
+To display a table with the title 'Foo' use
+  {% include articles.html title='Foo' %}
+{% endcomment %}
 
-        <div class="pdf{% if article.pdf_url %} available{% endif %}">
-          {% if article.pdf_url %}
-          <a href="{{ article.pdf_url }}"></a>
-          {% endif %}
-        </div>
-      </div>
+{% assign counter=0 %}
+{% for article in site.data.articles %}
+  {% if include.tag %}
+    {% if article.tags contains include.tag %}
+      {% assign counter=counter | plus:1 %}
+    {% endif %}
+  {% else %}
+    {% assign counter=counter | plus:1 %}
+  {% endif %}
+{% endfor %}
 
-      <div class="columns">
-        <div class="column name">
-          <p><a href="{{ article.publication_url }}">{{ article.title }}</a></p>
-        </div>
-
-        <div class="column conference">
-          <p><a href="{{ article.publication_url }}">{{ article.publication }}</a></p>
-        </div>
-
-        <div class="column location">
-          <p>{{ article.publisher }} - {{ article.issue_number }}</p>
-        </div>
-      </div>
-      <div class="clear"></div>
+{% if counter > 0 %}
+  <div class="content list">
+    <div class="title title-margin">
+      <div></div>
+      {% if include.title %}
+        <p><span>{{ include.title }}</span></p>
+      {% else %}
+        <p><span>Artikel in Fachzeitschriften</span></p>
+      {% endif %}
     </div>
-  {% endfor %}
-</div>
+
+    {% for article in site.data.articles %}
+
+      {% assign display_article = 0 %}
+      {% unless include.tag %}
+        {% assign display_article = 1 %}
+      {% elsif article.tags contains include.tag %}
+        {% assign display_article = 1 %}
+      {% endunless %}
+
+      {% if display_article == 1 %}
+        <div class="item article">
+          <div class="options">
+            <div class="online{% if article.article_url %} available{% endif %}">
+              {% if article.article_url %}
+              <a href="{{ article.article_url }}"></a>
+              {% endif %}
+            </div>
+
+            <div class="pdf{% if article.pdf_url %} available{% endif %}">
+              {% if article.pdf_url %}
+              <a href="{{ article.pdf_url }}"></a>
+              {% endif %}
+            </div>
+          </div>
+
+          <div class="columns">
+            <div class="column name">
+              <p><a href="{{ article.publication_url }}">{{ article.title }}</a></p>
+            </div>
+
+            <div class="column conference">
+              <p><a href="{{ article.publication_url }}">{{ article.publication }}</a></p>
+            </div>
+
+            <div class="column location">
+              <p>{{ article.publisher }} - {{ article.issue_number }}</p>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}

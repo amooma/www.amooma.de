@@ -1,12 +1,12 @@
 {% comment %}
-To display a table of all talks use
-  {% include talks.html %}
+To display a table of all books use
+  {% include books.html %}
 
-To display a table of all talks taged by 'Foo' use
-  {% include talks.html tag='Foo' %}
+To display a table of all books taged by 'Foo' use
+  {% include books.html tag='Foo' %}
 
 To display a table with the title 'Foo' use
-  {% include talks.html title='Foo' %}
+  {% include books.html title='Foo' %}
 {% endcomment %}
 
 {% assign counter=0 %}
@@ -25,18 +25,18 @@ To display a table with the title 'Foo' use
     <div class="title title-margin">
       <div></div>
       {% if include.title %}
-      <p><span>{{ include.title }}</span></p>
+        <p><span>{{ include.title }}</span></p>
       {% else %}
-      <p><span>Bücher</span></p>
+        <p><span>Bücher</span></p>
       {% endif %}
     </div>
 
     {% for book in site.data.books %}
       {% assign display_book = 0 %}
       {% unless include.tag %}
-      {% assign display_book = 1 %}
+        {% assign display_book = 1 %}
       {% elsif book.tags contains include.tag %}
-      {% assign display_book = 1 %}
+        {% assign display_book = 1 %}
       {% endunless %}
 
       {% if display_book == 1 %}
