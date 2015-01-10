@@ -1,0 +1,41 @@
+{% assign pages = site.pages | where: 'group' , 'navigation' %}
+{% assign sorted_pages = pages | sort: 'nav_position' %}
+{% assign logo_position = pages | size | divided_by:2 | plus:1 %}
+
+<div class="content menu">
+  <div class="desktop">
+    {% assign counter=0 %}
+    {% for node in sorted_pages %}
+      {% assign counter=counter | plus:1 %}
+      {% if counter == logo_position %}
+        <a class="logo" href="/">&nbsp;</a>
+      {% endif %}
+
+      {% if page.url == node.url %}
+        <a href="{{node.url}}" class="active">{{ node.title | upcase }}</a>
+      {% else %}
+        <a href="{{node.url}}">{{ node.title | upcase }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="mobile">
+    <a class="logo" href="/">&nbsp;</a>
+    <div class="select">
+      <div></div>
+      <p>FRONT PAGE</p>
+      <select onchange="window.location.href = this.value;">
+        <option value="/">FRONT PAGE</option>
+        {% assign counter=0 %}
+        {% for node in sorted_pages %}
+          {% assign counter=counter | plus:1 %}
+          {% if page.url == node.url %}
+            <option value="{{node.url}}" selected="selected">{{ node.title | upcase }}</option>
+          {% else %}
+            <option value="{{node.url}}">{{ node.title | upcase }}</option>
+          {% endif %}
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+</div>
