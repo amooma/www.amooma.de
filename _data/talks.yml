@@ -8,8 +8,8 @@
   video_url: http://youtu.be/MT5S9T0DWrs
   length: "27:17"
   lang: de
-  tags: |
-    WebPerf
+  tags:
+    - WebPerf
 
 - date: 30.04.2013
   conference: RailsConf
@@ -21,9 +21,8 @@
   video_url: http://www.confreaks.com/videos/2453-railsconf2013-cache-cash
   length: "27:16"
   lang: en
-  tags: |
-    Rails
-    WebPerf
+  tags:
+    - Rails
 
 - date: 25.05.2013
   conference: LinuxTag
@@ -35,9 +34,9 @@
   audio_url: http://linuxtag.mirror.speedpartner.de/lt-2013-audio-mp3/2013-05-25_newyork2/01_Stefan_Wintermeyer_-_Cache___Cash_.e461.mp3
   length: "45:58"
   lang: de
-  tags: |
-    Rails
-    WebPerf
+  tags:
+    - Rails
+    - WebPerf
 
 - date: 25.05.2013
   conference: LinuxTag
@@ -49,8 +48,8 @@
   audio_url: http://linuxtag.mirror.speedpartner.de/lt-2013-audio-mp3/2013-05-25_newyork1/07_Stefan_Wintermeyer_-_Ember.js.e452.mp3
   length: "25:43"
   lang: de
-  tags: |
-    Ember
+  tags:
+    - Ember
 
 - date: 24.08.2013
   conference: FrOSCon
@@ -62,8 +61,8 @@
   video_url: http://media.ccc.de/browse/conferences/froscon/2013/hs3_-_2013-08-25_14:00_-_ember_js_-_stefan_wintermeyer_-_1149.html
   length: "35:21"
   lang: de
-  tags: |
-    Ember
+  tags:
+    - Ember
 
 - date: 24.08.2013
   conference: FrOSCon
@@ -75,9 +74,9 @@
   video_url: http://media.ccc.de/browse/conferences/froscon/2013/hs1_2_-_2013-08-24_15:15_-_cache_cash_-_stefan_wintermeyer_-_1148.html
   length: "39:59"
   lang: de
-  tags: |
-    Rails
-    WebPerf
+  tags:
+    - Rails
+    - WebPerf
 
 - date: 29.10.2013
   conference: International PHP Conference
@@ -87,5 +86,5 @@
   title: 1.000 Millisekunden (Ladegeschwindigkeit)
   slides_url: https://speakerdeck.com/wintermeyer/1-dot-000-milisekunden
   lang: de
-  tags: |
-    WebPerf
+  tags:
+    - WebPerf

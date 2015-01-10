@@ -1,56 +1,90 @@
-<div class="content list">
+{% comment %}
+To display a table of all talks use
+  {% include talks.html %}
 
-  <div class="title">
-    <div></div>
-    <p><span>Vorträge</span></p>
-  </div>
+To display a table of all talks taged by 'Foo' use
+  {% include talks.html tag='Foo' %}
 
-  {% for talk in site.data.talks %}
+To display a table with the title 'Foo' use
+  {% include talks.html title='Foo' %}
+{% endcomment %}
 
-    <div class="item talk">
-      <div class="options">
-        <div class="video{% if talk.video_url %} available{% endif %}">
-          {% if talk.video_url %}
-            <a href="{{ talk.video_url }}"></a>
-          {% endif %}
-        </div>
+{% assign counter=0 %}
+{% for talk in site.data.talks %}
+  {% if include.tag %}
+    {% if talk.tags contains include.tag %}
+      {% assign counter=counter | plus:1 %}
+    {% endif %}
+  {% else %}
+    {% assign counter=counter | plus:1 %}
+  {% endif %}
+{% endfor %}
 
-        <div class="audio{% if talk.audio_url %} available{% endif %}">
-          {% if talk.audio_url %}
-            <a href="{{ talk.audio_url }}"></a>
-          {% endif %}
-        </div>
-
-        <div class="slides{% if talk.slides_url %} available{% endif %}">
-          {% if talk.slides_url %}
-            <a href="{{ talk.slides_url }}"></a>
-          {% endif %}
-        </div>
-      </div>
-
-      <div class="columns">
-        <div class="column name">
-          <p>
-            {% if talk.video_url %}
-              <a href="{{ talk.video_url }}">{{ talk.title }}</a> <span><br />{{ talk.length }}</span>
-            {% elsif talk.audio_url %}
-              <a href="{{ talk.audio_url }}">{{ talk.title }}</a> <span><br     />{{ talk.length }}</span>
-            {% else %}
-              {{ talk.title }} <span><br />{{ talk.length }}</span>
-            {% endif %}
-          </p>
-        </div>
-
-        <div class="column conference">
-          <p><a href="{{ talk.conference_url }}">{{ talk.conference }}</a></p>
-        </div>
-
-        <div class="column location">
-          <p>{{ talk.city }} - {{ talk.country }}</p>
-        </div>
-      </div>
-      <div class="clear"></div>
+{% if counter > 0 %}
+  <div class="content list">
+    <div class="title">
+      <div></div>
+      {% if include.title %}
+        <p><span>{{ include.title }}</span></p>
+      {% else %}
+        <p><span>Vorträge</span></p>
+      {% endif %}
     </div>
 
-  {% endfor %}
-</div>
+    {% for talk in site.data.talks %}
+      {% assign display_talk = 0 %}
+      {% unless include.tag %}
+        {% assign display_talk = 1 %}
+      {% elsif talk.tags contains include.tag %}
+        {% assign display_talk = 1 %}
+      {% endunless %}
+
+      {% if display_talk == 1 %}
+        <div class="item talk">
+          <div class="options">
+            <div class="video{% if talk.video_url %} available{% endif %}">
+              {% if talk.video_url %}
+                <a href="{{ talk.video_url }}"></a>
+              {% endif %}
+            </div>
+
+            <div class="audio{% if talk.audio_url %} available{% endif %}">
+              {% if talk.audio_url %}
+                <a href="{{ talk.audio_url }}"></a>
+              {% endif %}
+            </div>
+
+            <div class="slides{% if talk.slides_url %} available{% endif %}">
+              {% if talk.slides_url %}
+                <a href="{{ talk.slides_url }}"></a>
+              {% endif %}
+            </div>
+          </div>
+
+          <div class="columns">
+            <div class="column name">
+              <p>
+                {% if talk.video_url %}
+                  <a href="{{ talk.video_url }}">{{ talk.title }}</a> <span><br />{{ talk.length }}</span>
+                {% elsif talk.audio_url %}
+                  <a href="{{ talk.audio_url }}">{{ talk.title }}</a> <span><br />{{ talk.length }}</span>
+                {% else %}
+                  {{ talk.title }} <span><br />{{ talk.length }}</span>
+                {% endif %}
+              </p>
+            </div>
+
+            <div class="column conference">
+              <p><a href="{{ talk.conference_url }}">{{ talk.conference }}</a></p>
+            </div>
+
+            <div class="column location">
+              <p>{{ talk.city }} - {{ talk.country }}</p>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}
