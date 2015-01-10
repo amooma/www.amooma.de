@@ -12,3 +12,5 @@ github_username:  wintermeyer
 
 # Build settings
 markdown: kramdown
+
+highlighter: pygments
