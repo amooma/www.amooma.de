@@ -20,31 +20,7 @@ layout: default
   </div>
 </div>
 
-<!-- The two newest posts. -->
-{% assign counter=0 %}
-{% for post in site.posts %}
-  {% assign counter=counter | plus:1 %}
-{% endfor %}
-
-{% if counter > 1 %}
-  <div class="grey">
-    <div class="content blog">
-      {% for post in site.posts limit:2 %}
-      <div class="column-2-{% cycle '1', '2' %}">
-        <div class="post">
-          <div></div>
-          <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} <span>{{ post.date | date: "%b %-d, %Y" }}</span></a>
-          <p>{{ post.abstract }} <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">[Lesen]</a></p>
-          {% for tag in site.posts[0].tags %}
-            <a class="tag" href="#">{{ tag }}</a>
-          {% endfor %}
-        </div>
-      </div>
-      {% endfor %}
-      <div class="clear"></div>
-    </div>
-  </div>
-{% endif %}
+{% include last-2-posts.html %}
 
 <div class="content bio">
   <div class="stefan">

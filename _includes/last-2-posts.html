@@ -1,21 +1,35 @@
-<!-- The last two posts which have a 'Rails' tag. -->
-{% assign counter=0 %}
-{% for post in site.posts %}
-  {% if post.tags contains 'Rails' %}
-    {% assign counter=counter | plus:1 %}
-  {% endif %}
-{% endfor %}
+{% comment %}
+To display the last two posts which are tagged 'Foo' use:
+
+  {% include last-2-posts.html tag='Foo' %}
+
+To display the last two posts from any category use:
+
+  {% include last-2-posts.html %}
+{% endcomment %}
+
+{% if include.tag %}
+  {% assign posts = site.tags.[include.tag] %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% assign counter = posts | size %}
 
 {% if counter > 1 %}
   <div class="grey">
     <div class="content blog">
-      {% assign posts = site.tags.Rails %}
       {% for post in posts limit:2 %}
         <div class="column-2-{% cycle '1', '2' %}">
           <div class="post">
             <div></div>
             <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} <span>{{ post.date | date: "%b %-d, %Y" }}</span></a>
             <p>{{ post.abstract }} <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">[Lesen]</a></p>
+            {% unless include.tag %}
+              {% for tag in site.posts[0].tags %}
+                <a class="tag" href="#">{{ tag }}</a>
+              {% endfor %}
+            {% endunless %}
           </div>
         </div>
       {% endfor %}
