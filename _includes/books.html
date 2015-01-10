@@ -1,36 +1,70 @@
-<div class="content list">
+{% comment %}
+To display a table of all talks use
+  {% include talks.html %}
 
-  <div class="title title-margin">
-    <div></div>
-    <p><span>Bücher</span></p>
-  </div>
+To display a table of all talks taged by 'Foo' use
+  {% include talks.html tag='Foo' %}
 
-  {% for book in site.data.books %}
+To display a table with the title 'Foo' use
+  {% include talks.html title='Foo' %}
+{% endcomment %}
 
-  <div class="item">
-    <div class="options">
-      <div class="amazon{% if book.amazon_url %} available{% endif %}">
-        {% if book.amazon_url %}
-        <a href="{{ book.amazon_url }}"></a>
-        {% endif %}
-      </div>
+{% assign counter=0 %}
+{% for book in site.data.books %}
+  {% if include.tag %}
+    {% if book.tags contains include.tag %}
+      {% assign counter=counter | plus:1 %}
+    {% endif %}
+  {% else %}
+    {% assign counter=counter | plus:1 %}
+  {% endif %}
+{% endfor %}
+
+{% if counter > 0 %}
+  <div class="content list">
+    <div class="title title-margin">
+      <div></div>
+      {% if include.title %}
+      <p><span>{{ include.title }}</span></p>
+      {% else %}
+      <p><span>Bücher</span></p>
+      {% endif %}
     </div>
 
-    <div class="columns">
-      <div class="column name">
-        <p><a href="{{ book.book_url }}">{{ book.title }}</a>{% if book.subtitle %} <span>{{ book.subtitle }}</span>{% endif %}</p>
-      </div>
+    {% for book in site.data.books %}
+      {% assign display_book = 0 %}
+      {% unless include.tag %}
+      {% assign display_book = 1 %}
+      {% elsif book.tags contains include.tag %}
+      {% assign display_book = 1 %}
+      {% endunless %}
 
-      <div class="column conference">
-        <p><a href="{{ book.amazon_url }}">Bestellen</a></p>
-      </div>
+      {% if display_book == 1 %}
+        <div class="item">
+          <div class="options">
+            <div class="amazon{% if book.amazon_url %} available{% endif %}">
+              {% if book.amazon_url %}
+              <a href="{{ book.amazon_url }}"></a>
+              {% endif %}
+            </div>
+          </div>
 
-      <div class="column location">
-        <p>ISBN: {{ book.isbn }}</p>
-      </div>
-    </div>
-    <div class="clear"></div>
+          <div class="columns">
+            <div class="column name">
+              <p><a href="{{ book.book_url }}">{{ book.title }}</a>{% if book.subtitle %} <span>{{ book.subtitle }}</span>{% endif %}</p>
+            </div>
+
+            <div class="column conference">
+              <p><a href="{{ book.amazon_url }}">Bestellen</a></p>
+            </div>
+
+            <div class="column location">
+              <p>ISBN: {{ book.isbn }}</p>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
-
-  {% endfor %}
-</div>
+{% endif %}

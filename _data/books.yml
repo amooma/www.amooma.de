@@ -3,9 +3,14 @@
   isbn: 3827329892
   amazon_url: http://www.amazon.de/Ruby-Rails-3-2-Quereinsteiger-Library/dp/3827329892
   book_url: http://ruby-auf-schienen.de
+  tags:
+    - Rails
 
 - title: "Asterisk"
   subtitle: ""
   isbn: 3827330335
   amazon_url: http://www.amazon.de/Asterisk-1-4-1-6-Studentenausgabe-Programmierung/dp/3827330335
   book_url: http://das-asterisk-buch.de
+  tags:
+    - Asterisk
+    - VoIP
