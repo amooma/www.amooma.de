@@ -15,3 +15,11 @@
   article_url: http://www.heise.de/developer/artikel/Ember-js-1-1-im-Einsatz-2053975.html
   tags:
     - Ember
+- publication: "heise Developer"
+  publication_url: http://www.heise.de/developer/artikel/Hintergruende-zum-GitHub-Hack-1464254.html
+  publisher: Heise
+  issue_number: online
+  title: "Bender aus der Zukunft - Hintergründe zum Github-Hack"
+  article_url: http://www.heise.de/developer/artikel/Hintergruende-zum-GitHub-Hack-1464254.html
+  tags:
+    - Rails
