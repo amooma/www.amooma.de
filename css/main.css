@@ -140,6 +140,10 @@ p {
   font-size: 18px;
   font-weight: 400;
   line-height: 24px; }
+  @media (max-width: 650px) {
+    p {
+      font-size: 16px;
+      line-height: 22px; } }
 
 /* ### MENU: ### */
 div.menu div.desktop {
@@ -199,17 +203,18 @@ div.menu div.mobile {
       z-index: 1; }
 
 /* ### BLOG: ### */
+a.tag {
+  background: #3798cd;
+  color: #ffffff;
+  display: block;
+  float: left;
+  font-size: 12px;
+  line-height: 12px;
+  margin: 10px 10px 0px 0px;
+  padding: 5px; }
+
 div.blog div.post {
   padding: 30px 0px 0px 62px; }
-  div.blog div.post a.tag {
-    background: #3798cd;
-    color: #ffffff;
-    display: block;
-    float: left;
-    font-size: 12px;
-    line-height: 12px;
-    margin: 10px 10px 0px 0px;
-    padding: 5px; }
   div.blog div.post a.title {
     font-size: 18px;
     line-height: 24px; }
@@ -235,6 +240,16 @@ div.blog p.read-more {
     font-size: 14px;
     line-height: 20px;
     padding: 10px 20px 0px 20px; }
+
+/* ### BLOG POST: ### */
+div.blog-post div.tags {
+  padding: 0px 0px 10px 0px; }
+div.blog-post p.meta {
+  color: #aaaaaa;
+  padding: 20px;
+  text-align: center; }
+div.blog-post p {
+  padding: 0px 0px 10px 0px; }
 
 /* ### BIO: ### */
 div.bio {
