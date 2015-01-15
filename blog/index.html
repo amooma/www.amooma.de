@@ -16,15 +16,15 @@ permalink: /blog/
 <div class="content list">
   {% for post in site.posts %}
     <div class="item article">
-      <div class="columns">
-        <div class="options">
-          <p>{{ post.date | date: "%d.%m.%Y" }}</p>
+      <div class="columns blog">
+        <div class="options date">
+          <p>{{ post.date | date: "%d.%m<span>.</span><br />%Y" }}</p>
         </div>
 
-        <div class="column title">
+        <div class="column contents">
           <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
-          <p>{{ post.abstract }}</p>
-          <p>Lesezeit: {{ post.content | reading_time }}</p>
+          <p class="abstract">{{ post.abstract }}</p>
+          <p class="reading-time">Lesezeit: {{ post.content | reading_time }}</p>
         </div>
 
         <!--

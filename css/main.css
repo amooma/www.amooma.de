@@ -333,6 +333,22 @@ div.list div.item {
           clear: both;
           float: none;
           width: 100%; } }
+  @media (max-width: 650px) {
+    div.list div.item div.blog {
+      padding: 10px 10px 10px 60px; } }
+  div.list div.item div.blog div.contents p.abstract {
+    padding: 0px 10px 10px 10px; }
+    @media (max-width: 650px) {
+      div.list div.item div.blog div.contents p.abstract {
+        font-size: 14px;
+        padding: 5px 10px 5px 10px; } }
+  div.list div.item div.blog div.contents p.reading-time {
+    color: #aaaaaa;
+    font-size: 14px;
+    padding: 0px 10px 10px 10px; }
+    @media (max-width: 650px) {
+      div.list div.item div.blog div.contents p.reading-time {
+        padding: 0px 10px 0px 10px; } }
   div.list div.item div.options {
     left: 0px;
     overflow: hidden;
@@ -398,6 +414,24 @@ div.list div.item {
         margin: 15px 18px 0px 18px; } }
     div.list div.item div.options div.available {
       opacity: 1; }
+  @media (max-width: 650px) {
+    div.list div.item div.date {
+      top: 11px;
+      width: 60px; } }
+  div.list div.item div.date p {
+    text-align: center; }
+    @media (max-width: 650px) {
+      div.list div.item div.date p {
+        font-size: 14px;
+        line-height: 20px; } }
+    @media (max-width: 650px) {
+      div.list div.item div.date p span {
+        display: none; } }
+    div.list div.item div.date p br {
+      display: none; }
+      @media (max-width: 650px) {
+        div.list div.item div.date p br {
+          display: inline; } }
 @media (max-width: 650px) {
   div.list div.talk {
     min-height: 106px; }
