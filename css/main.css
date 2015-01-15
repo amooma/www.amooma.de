@@ -156,7 +156,7 @@ div.menu div.desktop {
     line-height: 30px;
     margin: 0px 18px 0px 18px; }
   div.menu div.desktop a.logo {
-    background: url('/gfx/logo.svg') no-repeat center center/100% 100%;
+    background: url('../gfx/logo.svg') no-repeat center center/100% 100%;
     height: 30px;
     width: 178px; }
 div.menu div.mobile {
@@ -167,7 +167,7 @@ div.menu div.mobile {
     div.menu div.mobile {
       display: block; } }
   div.menu div.mobile a.logo {
-    background: url('/gfx/logo.svg') no-repeat center center/100% 100%;
+    background: url('../gfx/logo.svg') no-repeat center center/100% 100%;
     display: block;
     float: left;
     height: 22px;
@@ -176,7 +176,7 @@ div.menu div.mobile {
     float: right;
     height: 22px; }
     div.menu div.mobile div.select div {
-      background: url('/gfx/menu.svg') no-repeat center center/100% 100%;
+      background: url('../gfx/menu.svg') no-repeat center center/100% 100%;
       float: right;
       height: 16px;
       margin: 4px 0px 4px 10px;
@@ -218,7 +218,7 @@ div.blog div.post {
       font-size: 14px;
       font-weight: 500; }
   div.blog div.post div {
-    background: url('/gfx/post.svg');
+    background: url('../gfx/post.svg');
     height: 44px;
     left: 0px;
     position: absolute;
@@ -254,7 +254,7 @@ div.bio {
         top: none;
         width: 200px; } }
     div.bio div.stefan div.photo {
-      background: url('/gfx/photo.jpg') no-repeat center center/100% 100%;
+      background: url('../gfx/photo.jpg') no-repeat center center/100% 100%;
       left: 0px;
       height: 167px;
       position: absolute;
@@ -265,7 +265,7 @@ div.bio {
         div.bio div.stefan div.photo {
           left: 20px; } }
     div.bio div.stefan div.signature {
-      background: url('/gfx/signature.png') no-repeat center center/100% 100%;
+      background: url('../gfx/signature.png') no-repeat center center/100% 100%;
       height: 61px;
       left: 40px;
       position: absolute;
@@ -345,38 +345,38 @@ div.list div.item {
       div.list div.item div.options {
         width: 52px; } }
     div.list div.item div.options div.amazon {
-      background: url('/gfx/amazon.svg') no-repeat center center/100% 100%;
+      background: url('../gfx/amazon.svg') no-repeat center center/100% 100%;
       cursor: pointer;
       height: 20px;
       margin: 13px 0px 12px 0px;
       width: 66px; }
       @media (max-width: 650px) {
         div.list div.item div.options div.amazon {
-          background-image: url('/gfx/amazon-small.svg');
+          background-image: url('../gfx/amazon-small.svg');
           height: 24px;
           width: 24px; } }
     div.list div.item div.options div.audio {
-      background: url('/gfx/audio.svg') no-repeat center center/100% 100%;
+      background: url('../gfx/audio.svg') no-repeat center center/100% 100%;
       height: 16px;
       margin: 14px 5px 14px 0px;
       width: 20px; }
     div.list div.item div.options div.online {
-      background: url('/gfx/online.svg') no-repeat center center/100% 100%;
+      background: url('../gfx/online.svg') no-repeat center center/100% 100%;
       height: 16px;
       margin: 14px 5px 14px 5px;
       width: 22px; }
     div.list div.item div.options div.pdf {
-      background: url('/gfx/pdf.svg') no-repeat center center/100% 100%;
+      background: url('../gfx/pdf.svg') no-repeat center center/100% 100%;
       height: 16px;
       margin: 14px 5px 14px 5px;
       width: 30px; }
     div.list div.item div.options div.slides {
-      background: url('/gfx/slides.svg') no-repeat center center/100% 100%;
+      background: url('../gfx/slides.svg') no-repeat center center/100% 100%;
       height: 16px;
       margin: 14px 5px 14px 0px;
       width: 22px; }
     div.list div.item div.options div.video {
-      background: url('/gfx/video.svg') no-repeat center center/100% 100%;
+      background: url('../gfx/video.svg') no-repeat center center/100% 100%;
       height: 16px;
       margin: 14px 5px 14px 5px;
       width: 22px; }
@@ -398,10 +398,13 @@ div.list div.item {
         margin: 15px 18px 0px 18px; } }
     div.list div.item div.options div.available {
       opacity: 1; }
-div.list div.talk {
-  min-height: 106px; }
-div.list div.article {
-  min-height: 70px; }
+@media (max-width: 650px) {
+  div.list div.talk {
+    min-height: 106px; }
+
+  div.list div.article {
+    min-height: 70px; }
+ }
 
 /* ### FOOTER: ### */
 div.footer {

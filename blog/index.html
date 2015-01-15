@@ -21,15 +21,13 @@ permalink: /blog/
           <p>{{ post.date | date: "%d.%m.%Y" }}</p>
         </div>
 
-        <div class="column name">
-          <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
-        </div>
-
-        <div class="column conference">
+        <div class="column title">
+          <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
           <p>{{ post.abstract }}</p>
           <p>Lesezeit: {{ post.content | reading_time }}</p>
         </div>
 
+        <!--
         <div class="column location">
           <p>
             {% for tag in site.posts[0].tags %}
@@ -37,6 +35,7 @@ permalink: /blog/
             {% endfor %}
           </p>
         </div>
+        -->
       </div>
       <div class="clear"></div>
     </div>
