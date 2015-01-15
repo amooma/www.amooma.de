@@ -11,34 +11,34 @@ permalink: /blog/
   <div class="divider"></div>
   <h1>Blog</h1>
   <div class="divider"></div>
+</div>
 
-  <div class="content list">
-    {% for post in site.posts %}
-      <div class="item article">
-        <div class="columns">
-          <div class="options">
-            <p>{{ post.date | date: "%d.%m.%Y" }}</p>
-          </div>
-
-          <div class="column name">
-            <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
-          </div>
-
-          <div class="column conference">
-            <p>{{ post.abstract }}</p>
-            <p>Lesezeit: {{ post.content | reading_time }}</p>
-          </div>
-
-          <div class="column location">
-            <p>
-              {% for tag in site.posts[0].tags %}
-              <a class="tag" href="#">{{ tag }}</a>
-              {% endfor %}
-            </p>
-          </div>
+<div class="content list">
+  {% for post in site.posts %}
+    <div class="item article">
+      <div class="columns">
+        <div class="options">
+          <p>{{ post.date | date: "%d.%m.%Y" }}</p>
         </div>
-        <div class="clear"></div>
+
+        <div class="column name">
+          <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+        </div>
+
+        <div class="column conference">
+          <p>{{ post.abstract }}</p>
+          <p>Lesezeit: {{ post.content | reading_time }}</p>
+        </div>
+
+        <div class="column location">
+          <p>
+            {% for tag in site.posts[0].tags %}
+            <a class="tag" href="#">{{ tag }}</a>
+            {% endfor %}
+          </p>
+        </div>
       </div>
-    {% endfor %}
-  </div>
+      <div class="clear"></div>
+    </div>
+  {% endfor %}
 </div>
