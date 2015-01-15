@@ -12,9 +12,9 @@
       {% endif %}
 
       {% if page.url == node.url %}
-        <a href="{{node.url}}" class="active">{{ node.title | upcase }}</a>
+        <a href="{{node.url}}" class="active">{{ node.short_title | upcase }}</a>
       {% else %}
-        <a href="{{node.url}}">{{ node.title | upcase }}</a>
+        <a href="{{node.url}}">{{ node.short_title | upcase }}</a>
       {% endif %}
     {% endfor %}
   </div>
@@ -30,9 +30,9 @@
         {% for node in sorted_pages %}
           {% assign counter=counter | plus:1 %}
           {% if page.url == node.url %}
-            <option value="{{node.url}}" selected="selected">{{ node.title | upcase }}</option>
+            <option value="{{node.url}}" selected="selected">{{ node.short_title | upcase }}</option>
           {% else %}
-            <option value="{{node.url}}">{{ node.title | upcase }}</option>
+            <option value="{{node.url}}">{{ node.short_title | upcase }}</option>
           {% endif %}
         {% endfor %}
       </select>
