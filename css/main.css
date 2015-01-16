@@ -472,8 +472,8 @@ div.footer {
     @media (max-width: 650px) {
       div.footer p span {
         display: none; } }
-    div.footer p br {
+    div.footer p br.small {
       display: none; }
       @media (max-width: 650px) {
-        div.footer p br {
+        div.footer p br.small {
           display: inline; } }
