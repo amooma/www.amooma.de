@@ -88,7 +88,7 @@ div.grey {
   padding: 10px 0px 40px 0px; }
 
 /* ### LINKS, HEADERS, TEXT: ### */
-a, h1, p {
+a, h1, h2, p {
   word-wrap: break-word; }
 
 a {
@@ -134,6 +134,12 @@ h1 {
       font-size: 28px;
       line-height: 40px;
       margin: 30px 0px 30px 0px; } }
+
+h2 {
+  color: #3a4551;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 20px 0px 20px 0px; }
 
 p {
   color: #3a4551;
