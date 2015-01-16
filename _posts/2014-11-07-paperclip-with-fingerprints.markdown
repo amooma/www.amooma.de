@@ -15,14 +15,13 @@ Let me save you a couple of hours searching with this example config:
 
 {% highlight ruby %}
 class User < ActiveRecord::Base
-  has_attached_file :avatar,
-                    :styles => {
-                                 :medium => "x300>",
-                                 :thumb => "100x100>"
-                               },
-                    :url  => "/system/:attachment/:id/:style/:basename-:fingerprint.:extension",
-                    :path => ":rails_root/public/system/:attachment/:id/:style/:basename-:fingerprint.:extension",
-                    :use_timestamp => false
+  has_attached_file :avatar, :styles => {
+    :medium => "x300>",
+    :thumb => "100x100>"
+  },
+  :url  => "/system/:attachment/:id/:style/:basename-:fingerprint.:extension",
+  :path => ":rails_root/public/system/:attachment/:id/:style/:basename-:fingerprint.:extension",
+  :use_timestamp => false
 end
 {% endhighlight %}
 

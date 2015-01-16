@@ -88,7 +88,7 @@ div.grey {
   padding: 10px 0px 40px 0px; }
 
 /* ### LINKS, HEADERS, TEXT: ### */
-a, h1, h2, p {
+a, h1, h2, p, pre {
   word-wrap: break-word; }
 
 a {
@@ -150,6 +150,17 @@ p {
     p {
       font-size: 16px;
       line-height: 22px; } }
+
+pre {
+  padding: 10px;
+  margin: 10px 0px 10px 0px; }
+  pre code {
+    font-family: 'Courier', 'Courier New', 'Lucida Console', monospace;
+    font-size: 14px;
+    line-height: 18px; }
+    pre code span {
+      margin: 0px;
+      white-space: normal; }
 
 ul li {
   list-style-position: inside; }
