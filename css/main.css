@@ -151,6 +151,9 @@ p {
       font-size: 16px;
       line-height: 22px; } }
 
+ul li {
+  list-style-position: inside; }
+
 /* ### MENU: ### */
 div.menu div.desktop {
   height: 30px;
