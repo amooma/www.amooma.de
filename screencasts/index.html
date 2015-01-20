@@ -1,0 +1,34 @@
+---
+layout: default
+short_title: Screencasts
+title: Screencasts der AMOOMA GmbH
+description: Screencasts
+group: "navigation"
+nav_position: 5
+permalink: /screencasts/
+---
+
+<div class="content">
+  <div class="divider"></div>
+  <h1>Screencasts</h1>
+  <div class="divider"></div>
+</div>
+
+<div class="content list">
+  {% for post in site.posts %}
+    <div class="item article">
+      <div class="columns blog">
+        <div class="options date">
+          <p>{{ post.date | date: "%d.%m<span>.</span><br />%Y" }}</p>
+        </div>
+
+        <div class="column contents">
+          <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+          <p class="abstract">{{ post.abstract }}</p>
+          <p class="reading-time">Lesezeit: {{ post.content | reading_time }}</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  {% endfor %}
+</div>
