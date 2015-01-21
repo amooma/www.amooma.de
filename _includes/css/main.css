@@ -499,3 +499,15 @@ div.faq p.answer {
   padding: 0px 0px 0px 20px; }
 div.faq p.question {
   padding: 20px 0px 20px 23px; }
+
+div.article {
+  padding: 0px 0px 10px 0px;
+}
+
+iframe {
+  clear: both;
+  display: block;
+  margin: 0px auto 20px auto;
+  min-height: 300px;
+  width: 80%;
+}
