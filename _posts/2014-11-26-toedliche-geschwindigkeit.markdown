@@ -8,6 +8,9 @@ author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de
 abstract: Video und Folien zum Vortrag "Tödliche Geschwindigkeit" auf dem ux congress 2014 in Frankfurt.
+custom_css:
+  - blog
+  - iframe
 ---
 
 Wie versprochen hier das Video zum Vortrag "Tödliche Geschwindigkeit" auf dem [ux congress](http://www.ux-congress.com/) 2014 in Frankfurt. Danke an das Team von [Fatboy Film](http://fatboyfilm.de/) für die Aufnahme.

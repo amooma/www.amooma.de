@@ -9,6 +9,10 @@ email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de
 abstract: "One of the most asked questions of Rails newbies is how one can created a nested form which lets the user edit the parent and the child attributes in the same form. This screencast gives a step by step example."
 youtube_video_id: jngp1kdKTwA
+custom_css:
+  - blog
+  - syntax
+  - iframe
 ---
 
 In this screencast I show how to create nested forms. A nested form is a form within an other form. The aim is to generate a nicer user experience because the user doesn't have to jump back and forth between parent and child forms. To show the effect I create a database of hotels which have different room categories. A hotel should be editable in one form which includes all the room categories.

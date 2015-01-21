@@ -8,6 +8,9 @@ author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de
 abstract: Wie kann man bei einem Relaunch dem Google Crawler sagen, das er später noch mal wieder kommen soll?
+custom_css:
+  - blog
+  - syntax
 ---
 Beim Relaunch von komplexen Webseiten besteht immer ein Restrisiko, das einem ein unvorhergesehener Seiteneffekt ins Knie schießt. Gerade bei Seiten, die mit legacy Systemen kommunizieren oder beim kompletten Umstieg von einer Programmierplattform auf eine andere.
 

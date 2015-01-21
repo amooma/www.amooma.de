@@ -1,0 +1,50 @@
+/* ### BIO: ### */
+div.bio {
+  margin: 40px auto 0px auto;
+  min-height: 191px; }
+  div.bio div.stefan {
+    height: 191px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 291px; }
+    @media (max-width: 550px) {
+      div.bio div.stefan {
+        position: relative;
+        left: none;
+        margin: 0px auto 30px auto;
+        top: none;
+        width: 200px; } }
+    div.bio div.stefan div.photo {
+      background: url("{{ 'photo.jpg' | asset_path }}") no-repeat center center/100% 100%;
+      left: 0px;
+      height: 167px;
+      position: absolute;
+      top: 0px;
+      width: 167px;
+      z-index: 1; }
+      @media (max-width: 550px) {
+        div.bio div.stefan div.photo {
+          left: 20px; } }
+    div.bio div.stefan div.signature {
+      background: url("{{ 'signature.png' | asset_path }}") no-repeat center center/100% 100%;
+      height: 56px;
+      left: 35px;
+      position: absolute;
+      top: 140px;
+      width: 230px;
+      z-index: 2; }
+      @media (max-width: 950px) {
+        div.bio div.stefan div.signature {
+          height: 49px;
+          left: -10px;
+          top: 150px;
+          width: 200px; } }
+      @media (max-width: 550px) {
+        div.bio div.stefan div.signature {
+          left: 0px; } }
+  div.bio div.text {
+    padding: 0px 0px 0px 200px; }
+    @media (max-width: 550px) {
+      div.bio div.text {
+        padding: 0px; } }

@@ -8,6 +8,9 @@ author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de
 abstract: "Time#parse Zeitzonen Problem bei Ruby 2.2. Es wird nicht per Default die System-Zeitzone benutzt."
+custom_css:
+  - blog
+  - syntax
 ---
 Parker Moore (<a href="http://twitter.com/parkr">@parkr</a>) hat in seinem Blog-Post <a href="https://byparker.com/blog/2014/ruby-2-2-0-time-parse-localtime-regression/">Ruby 2.2.0 Time#parse TZ-related regression</a> einen für alle Rails- und Ruby-Entwickler wichtigen Punkt (Bug oder Feature?) zur Ruby Version 2.2 veröffentlicht. Bis einschliesslich Ruby 2.1 wurde von `Time.parse()` der zur parsende Uhrzeit für die System-Zeitzone geparst. Ab Ruby 2.2 muss dafür die Methode `localtime` benutzt werden.
 

@@ -8,6 +8,9 @@ author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de
 abstract: Improve your webperformance by pre-opening additional TCP pipes to yourself.
+custom_css:
+  - blog
+  - syntax
 ---
 You can use `preconnect` to pre-open a new TCP connection. So the browser can do this time intensive task while it waits for the rest of the HTML-page. Example to preconnect `www.example.com`:
 

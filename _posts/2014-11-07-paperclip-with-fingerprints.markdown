@@ -8,6 +8,9 @@ author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de
 abstract: How to configure a paperclip's has_attached_file to use filenames with a proper MD5 sum fingerprint.
+custom_css:
+  - blog
+  - syntax
 ---
 You are using the [Paperclip Gem](https://github.com/thoughtbot/paperclip) with a Ruby on Rails model and want to setup a proper HTTP-Cache with fingerprinted files (see ["What is Fingerprinting and Why Should I Care?"](http://guides.rubyonrails.org/asset_pipeline.html#what-is-fingerprinting-and-why-should-i-care-questionmark) for some background on fingerprinting assets)?
 

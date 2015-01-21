@@ -6,13 +6,16 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <style>
-    {% include css/main.css %}
-    {% include css/syntax.css %}
+{% include css/main.css %}
+
+{% for css in page.custom_css %}
+{% include css/{{css}}.css %}
+{% endfor %}
   </style>
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
 
-  <link rel="shortcut icon" href="{{ "/gfx/favicon.png" | prepend: site.baseurl }}">
+  <link rel="shortcut icon" href="{{ "favicon.png" | prepend: site.baseurl }}">
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 

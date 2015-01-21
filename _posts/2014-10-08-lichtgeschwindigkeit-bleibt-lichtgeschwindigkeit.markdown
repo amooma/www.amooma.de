@@ -8,6 +8,7 @@ author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de
 abstract: Eine Ladezeiten-Aufstellung einer deutschen Webseite von verschiedenen Orten dieser Welt (z.B. Sydney und New York).
+custom_css: blog
 ---
 Wenn ich beim Thema Webperformance eine Sache immer und immer wieder erklären muss, dann ist es die immense Wichtigkeit einer geringen Latenz. Für IT-Laien: Glasfaserleitungen verbinden die einzelnen Länder bzw. Kontinente. Die Geschwindigkeit einer Glasfaserleitung ist durch die Lichtgeschwindigkeit begrenzt. Schneller geht nicht! Es macht deshalb keinen Sinn einen Server in den USA für deutsche Kunden zu benutzen. In diesem Posting zeige ich die gewaltigen Zeitunterschiede.
 
