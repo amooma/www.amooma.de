@@ -14,3 +14,10 @@ github_username:  wintermeyer
 markdown: kramdown
 
 highlighter: pygments
+
+# Screencasts
+#
+collections:
+  screencasts:
+    output: true
+    permalink: /screencasts/:path/

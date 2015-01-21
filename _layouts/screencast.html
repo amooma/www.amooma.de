@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="content blog-post">
+  <div class="divider"></div>
+  <h1>{{ page.title }}</h1>
+  <div class="divider"></div>
+
+  <p class="meta">{{ page.date | date: "%d.%m.%Y" }}{% if page.author %} by {{ page.author }}{% endif %}{% if page.meta %} &mdash; {{ page.meta }}{% endif %}</p>
+
+  <iframe width="560" height="315" src="//www.youtube.com/embed/{{youtube_video_id}}" frameborder="0" allowfullscreen></iframe>
+
+  {{ content }}
+
+  <div class="tags">
+    {% for tag in site.posts[0].tags %}
+    <a class="tag" href="#">{{ tag }}</a>
+    {% endfor %}
+  </div>
+</div>
