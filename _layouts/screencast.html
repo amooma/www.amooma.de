@@ -8,8 +8,12 @@ layout: default
 
   <p class="meta">{{ page.date | date: "%d.%m.%Y" }}{% if page.author %} by {{ page.author }}{% endif %}{% if page.meta %} &mdash; {{ page.meta }}{% endif %}</p>
 
-  <iframe width="560" height="315" src="//www.youtube.com/embed/{{youtube_video_id}}" frameborder="0" allowfullscreen></iframe>
-
+  <p>
+{% if page.youtube_video_id %}
+  <a href="https://www.youtube.com/watch?v={{ page.youtube_video_id }}">Whatch this screencast on YouTube ({{ page.video_length }}).</a>
+{% endif %}
+  </p>
+  
   {{ content }}
 
   <div class="tags">

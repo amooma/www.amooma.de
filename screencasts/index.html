@@ -22,33 +22,12 @@ custom_css:
   </div>
   <div class="text">
     <p>
-      Welcome to my screencasts. They are a wild mix of German and English (warning: German accent). Each screencast comes with a transcript and all the code examples. The audio quality of the first ones is bad - sorry for that rookie mistake.
+      Welcome to my screencasts. They are a mix of German and English with a German accent. Each screencast comes with a transcript and code examples.
     </p>
     <p>
-      Please do send me feedback and bug reports to <a href="mailto:stefan.wintermeyer@amooma.de">stefan.wintermeyer@amooma.de</a> and share the screencast links on Twitter, Facebook and what not. New screencasts get announced on <a href="https://twitter.com/wintermeyer">@wintermeyer</a>.
+      Please do send me feedback and bug reports to <a href="mailto:stefan.wintermeyer@amooma.de">stefan.wintermeyer@amooma.de</a> and share the screencast links on Twitter, Facebook and what not. New screencasts get announced on my Twitter feed <a href="https://twitter.com/wintermeyer">@wintermeyer</a>.
     </p>
   </div>
 </div>
 
-<div class="content list">
-  {% for screencast in site.screencasts %}
-    <div class="item article">
-      <div class="columns blog">
-        <div class="options date">
-          <p>{{ screencast.date | date: "%d.%m<span>.</span><br />%Y" }}</p>
-        </div>
-
-        <div class="column contents">
-          <p><a href="{{ screencast.url | prepend: site.baseurl }}">{{ screencast.title }}</a></p>
-          <p class="abstract">{{ screencast.abstract }}</p>
-          <p class="reading-time">Time to read: {{ screencast.content | reading_time }}<br>
-          {% for tag in screencast.tags %}
-          <a class="tag" href="#">{{ tag }}</a>
-          {% endfor %}
-          </p>
-        </div>
-      </div>
-      <div class="clear"></div>
-    </div>
-  {% endfor %}
-</div>
+{% include screencasts.html %}

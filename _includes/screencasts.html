@@ -1,0 +1,87 @@
+{% comment %}
+To display a table of all talks use
+  {% include screencasts.html %}
+
+To display a table of all screencasts taged by 'Foo' use
+  {% include screencasts.html tag='Foo' %}
+
+To display a table with the title 'Foo' use
+  {% include screencasts.html title='Foo' %}
+{% endcomment %}
+
+{% assign counter=0 %}
+{% for screencast in site.screencasts %}
+  {% if include.tag %}
+    {% if screencast.tags contains include.tag %}
+      {% assign counter=counter | plus:1 %}
+    {% endif %}
+  {% else %}
+    {% assign counter=counter | plus:1 %}
+  {% endif %}
+{% endfor %}
+
+{% if counter > 0 %}
+  <div class="content list">
+    <div class="title">
+      <div></div>
+      {% if include.title %}
+        <p><span>{{ include.title }}</span></p>
+      {% else %}
+        <p><span>Screencasts</span></p>
+      {% endif %}
+    </div>
+
+    {% for screencast in site.screencasts %}
+      {% assign display_screencast = 0 %}
+      {% unless include.tag %}
+        {% assign display_screencast = 1 %}
+      {% elsif screencast.tags contains include.tag %}
+        {% assign display_screencast = 1 %}
+      {% endunless %}
+
+      {% if display_screencast == 1 %}
+        <div class="item screencast">
+          <div class="options">
+            <div class="video{% if screencast.youtube_video_id %} available{% endif %}">
+              {% if screencast.youtube_video_id %}
+                <a href="https://www.youtube.com/watch?v={{ screencast.youtube_video_id }}"></a>
+              {% endif %}
+            </div>
+
+            <div class="audio{% if screencast.audio_url %} available{% endif %}">
+              {% if screencast.audio_url %}
+                <a href="{{ screencast.audio_url }}"></a>
+              {% endif %}
+            </div>
+          </div>
+
+          <div class="columns">
+            <div class="column name">
+              <p>
+                {% if screencast.youtube_video_id %}
+                  <a href="{{ screencast.url }}">{{ screencast.title }}</a> <span><br />{{ screencast.video_length }}</span>
+                {% elsif screencast.audio_url %}
+                  <a href="{{ screencast.audio_url }}">{{ screencast.title }}</a>
+                {% else %}
+                  {{ screencast.title }} <span><br />{{ screencast.length }}</span>
+                {% endif %}
+              </p>
+            </div>
+
+            <div class="column conference">
+              {% for tag in screencast.tags %}
+              <a class="tag" href="#">{{ tag }}</a>
+              {% endfor %}
+            </div>
+
+            <div class="column location">
+              <p class="abstract">{{ screencast.abstract }}</p>
+              <p class="reading-time">Time to read: {{ screencast.content | reading_time }}<br>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}

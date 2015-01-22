@@ -2,13 +2,14 @@
 layout: screencast
 title: "Nested Forms with Ruby on Rails 4.2"
 lang: en
-date: 2015-01-21 18:00:00
+date: 2015-01-22 19:00:00
 tags: Rails Ruby
 author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de
 abstract: "One of the most asked questions of Rails newbies is how one can created a nested form which lets the user edit the parent and the child attributes in the same form. This screencast gives a step by step example."
-youtube_video_id: jngp1kdKTwA
+youtube_video_id: a61yKxi3pL0
+video_length: 13:37 min
 custom_css:
   - blog
   - syntax
