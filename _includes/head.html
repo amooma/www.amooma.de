@@ -6,11 +6,11 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <style>
-{% include css/main.css %}
+    {% include css/main.css %}
 
-{% for css in page.custom_css %}
-{% include css/{{css}}.css %}
-{% endfor %}
+    {% for css in page.custom_css %}
+      {% include css/{{css}}.css %}
+    {% endfor %}
   </style>
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
@@ -19,4 +19,20 @@
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
+  <!-- Prefetch small pages the user likely visits next. -->
+  {% assign pages = site.pages | where: 'group' , 'navigation' %}
+
+  {% for node in pages %}
+    {% unless page.url == node.url %}
+      <link rel="prefetch" href="{{node.url}}">
+    {% endunless %}
+  {% endfor %}
+
+  {% for post in site.posts limit:2 %}
+    <link rel="prefetch" href="{{post.url}}">
+  {% endfor %}
+
+  {% for screencast in site.screencasts limit:1 %}
+    <link rel="prefetch" href="{{screencast.url}}">
+  {% endfor %}
 </head>
