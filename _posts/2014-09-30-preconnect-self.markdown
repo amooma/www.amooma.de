@@ -8,6 +8,7 @@ author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de
 abstract: Improve your webperformance by pre-opening additional TCP pipes to yourself.
+excerpt: "Blog-Post: Improve your webperformance by pre-opening additional TCP pipes to yourself."
 custom_css:
   - blog
   - syntax

@@ -8,6 +8,7 @@ author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de
 abstract: "Time#parse Zeitzonen Problem bei Ruby 2.2. Es wird nicht per Default die System-Zeitzone benutzt."
+excerpt: "Blog-Post: Time#parse Zeitzonen Problem bei Ruby 2.2. Es wird nicht per Default die System-Zeitzone benutzt."
 custom_css:
   - blog
   - syntax

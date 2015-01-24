@@ -8,6 +8,8 @@ author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de
 abstract: Der Weg von einem Speed Index von 1.700 (alte Seite) auf 401 (neue Seite).
+excerpt: "Blog-Post: Der Weg von einem Speed Index von 1.700 (alte Seite) auf 401 (neue Seite)."
+
 custom_css: blog
 ---
 Letzte Woche ging die neue AMOOMA Webseite online. Heute möchte ich ein wenig mehr in die Details der Index-Seite gehen und erklären wie man auf einen [Speed Index](https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index) von 401 kommen kann.

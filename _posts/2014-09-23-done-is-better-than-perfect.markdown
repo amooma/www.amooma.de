@@ -8,6 +8,7 @@ author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de
 abstract: Unsere neue Homepage ist online und als Quellcode auf Github abrufbar.
+excerpt: "Blog-Post: Unsere neue Homepage ist online und als Quellcode auf Github abrufbar."
 custom_css: blog
 ---
 Die eigene Webseite gefällt einem ja fast nie 100%ig. Da gibt es immer hier und dort ein paar Sachen, die man gerne besser/anders hätte. So ist das auch mit amooma.de. Ausserdem wollte ich schon seit langem wieder ein kleines Blog veröffentlichen. Deshalb gibt es jetzt einen neuen Webauftritt.

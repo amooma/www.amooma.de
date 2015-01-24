@@ -8,6 +8,7 @@ author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de
 abstract: How to configure a paperclip's has_attached_file to use filenames with a proper MD5 sum fingerprint.
+excerpt: "Blog-Post: How to configure a paperclip's has_attached_file to use filenames with a proper MD5 sum fingerprint."
 custom_css:
   - blog
   - syntax
