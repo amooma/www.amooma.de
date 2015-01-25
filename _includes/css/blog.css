@@ -19,7 +19,7 @@ div.blog div.post {
       font-size: 14px;
       font-weight: 500; }
   div.blog div.post div {
-    background: url("{% base64 gfx/post.svg %}");
+    {% include css_background_url_inline_svg.html file_name='gfx/post.svg' %}
     height: 44px;
     left: 0px;
     position: absolute;

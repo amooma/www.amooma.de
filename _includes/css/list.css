@@ -72,7 +72,7 @@ div.list div.item {
       div.list div.item div.options {
         width: 52px; } }
     div.list div.item div.options div.amazon {
-      background: url("{% base64 gfx/amazon.svg %}") no-repeat center center/100% 100%;
+      {% include css_background_url_inline_svg.html file_name='gfx/amazon.svg' append_css='no-repeat center center/100% 100%' %}
       cursor: pointer;
       height: 20px;
       margin: 13px 0px 12px 0px;
@@ -83,27 +83,27 @@ div.list div.item {
           height: 24px;
           width: 24px; } }
     div.list div.item div.options div.audio {
-      background: url("{% base64 gfx/audio.svg %}") no-repeat center center/100% 100%;
+      {% include css_background_url_inline_svg.html file_name='gfx/audio.svg' append_css='no-repeat center center/100% 100%' %}
       height: 16px;
       margin: 14px 5px 14px 0px;
       width: 20px; }
     div.list div.item div.options div.online {
-      background: url("{% base64 gfx/online.svg %}") no-repeat center center/100% 100%;
+      {% include css_background_url_inline_svg.html file_name='gfx/online.svg' append_css='no-repeat center center/100% 100%' %}
       height: 16px;
       margin: 14px 5px 14px 5px;
       width: 22px; }
     div.list div.item div.options div.pdf {
-      background: url("{% base64 gfx/pdf.svg %}") no-repeat center center/100% 100%;
+      {% include css_background_url_inline_svg.html file_name='gfx/pdf.svg' append_css='no-repeat center center/100% 100%' %}
       height: 16px;
       margin: 14px 5px 14px 5px;
       width: 30px; }
     div.list div.item div.options div.slides {
-      background: url("{% base64 gfx/slides.svg %}") no-repeat center center/100% 100%;
+      {% include css_background_url_inline_svg.html file_name='gfx/slides.svg' append_css='no-repeat center center/100% 100%' %}
       height: 16px;
       margin: 14px 5px 14px 0px;
       width: 22px; }
     div.list div.item div.options div.video {
-      background: url("{% base64 gfx/video.svg %}") no-repeat center center/100% 100%;
+      {% include css_background_url_inline_svg.html file_name='gfx/video.svg' append_css='no-repeat center center/100% 100%' %}
       height: 16px;
       margin: 14px 5px 14px 5px;
       width: 22px; }

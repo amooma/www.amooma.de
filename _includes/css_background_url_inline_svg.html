@@ -1,0 +1,9 @@
+{% capture svg %}{% include {{include.file_name}} %}{% endcapture %}
+{% assign svgsplit = svg | split: 'svg11.dtd">' %}
+{% assign svgpart = svgsplit[1] | strip_newlines %}
+{% assign svgpart_url_encoded = svgpart | replace: ' ', '%20' | replace: '&', '%26' | replace: '?', '%3F' | replace: '!', '%21' | replace: ',', '%2C' | replace: "'", "%27" | replace: "<", "%3C" | replace: '>', '%3E' | replace: '"', '%22' %}
+{% assign svg_result = svgpart_url_encoded | prepend: 'background: url("data:image/svg+xml;utf8,' | append: '");'  %}
+{% if include.append_css %}
+  {% assign svg_result = svgpart_url_encoded | prepend: 'background: url("data:image/svg+xml;utf8,' | append: '") ' | append: include.append_css | append: ';'  %}
+{% endif %}
+{{ svg_result }}
