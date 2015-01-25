@@ -1,4 +1,8 @@
 <head>
+  <!-- Prefetch the two files we need later on this page. -->
+  <link rel="prefetch" href="{{ 'photo.jpg' | asset_path }}">
+  <link rel="prefetch" href="{{ 'signature.png' | asset_path }}">
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
@@ -6,9 +10,6 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <!-- Prefetch stuff the browser likely needs soon. -->
-  <link rel="prefetch" href="{{ 'photo.jpg' | asset_path }}">
-  <link rel="prefetch" href="{{ 'signature.png' | asset_path }}">
-
   {% assign pages = site.pages | where: 'group' , 'navigation' %}
 
   {% for node in pages %}
