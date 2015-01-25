@@ -1,3 +1,7 @@
+# Public vs Closed
+
+This is a public repository. Please feel free to copy ideas and learn from our mistakes.
+
 # Setup
 
     gem install jekyll
