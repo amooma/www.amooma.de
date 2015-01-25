@@ -180,7 +180,7 @@ div.menu div.desktop {
     line-height: 30px;
     margin: 0px 18px 0px 18px; }
   div.menu div.desktop a.logo {
-    {% include css_background_url_inline_svg.html file_name='gfx/logo.svg' append_css='no-repeat center center/100% 100%' %}
+    background: url("{% base64 gfx/logo.svg %}") no-repeat center center/100% 100%;
     height: 30px;
     width: 178px; }
 div.menu div.mobile {
@@ -191,7 +191,7 @@ div.menu div.mobile {
     div.menu div.mobile {
       display: block; } }
   div.menu div.mobile a.logo {
-    {% include css_background_url_inline_svg.html file_name='gfx/logo.svg' append_css='no-repeat center center/100% 100%' %}
+    background: url("{% base64 gfx/logo.svg %}") no-repeat center center/100% 100%;
     display: block;
     float: left;
     height: 22px;
@@ -200,7 +200,7 @@ div.menu div.mobile {
     float: right;
     height: 22px; }
     div.menu div.mobile div.select div {
-      {% include css_background_url_inline_svg.html   file_name='gfx/menu.svg' append_css='no-repeat center center/100% 100%' %}
+      background: url("{% base64 gfx/menu.svg %}") no-repeat center center/100% 100%;
       float: right;
       height: 16px;
       margin: 4px 0px 4px 10px;
