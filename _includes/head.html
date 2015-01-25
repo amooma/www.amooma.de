@@ -10,6 +10,10 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <!-- Prefetch stuff the browser likely needs soon. -->
+  {% unless page.url == '/index.html' %}
+    <link rel="prefetch" href="/">
+  {% endunless %}
+
   {% assign pages = site.pages | where: 'group' , 'navigation' %}
 
   {% for node in pages %}
