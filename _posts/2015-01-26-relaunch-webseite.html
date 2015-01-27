@@ -1,0 +1,66 @@
+---
+layout: default
+title: "Relaunch der Webseite"
+lang: de
+date: 2015-01-26 14:00:00
+tags: AMOOMA
+author: Stefan Wintermeyer
+email: stefan.wintermeyer@amooma.de
+homepage: http://www.wintermeyer.de
+abstract: "Am 23.01.2015 haben wir unsere neue Webseite in Betrieb genommen. In diesem Post gibt es ein paar Details dazu."
+excerpt: "Am 23.01.2015 haben wir unsere neue Webseite in Betrieb genommen. In diesem Post gibt es ein paar Details dazu."
+custom_css:
+  - blog
+  - syntax
+---
+
+<div class="content">
+  <div class="divider"></div>
+    <h1>{{ page.title }}</h1>
+  <div class="divider"></div>
+
+  <div class="column-2-1">
+    <p>
+Am 23.01.2015 ging die neue <a href="http://www.amooma.de">www.amooma.de</a> Webseite online. Wir wollten ein aufgeräumtes und helleres Design. Die neue Ladezeit sollte wieder im Bereich 400 - 500ms für Abrufe aus Deutschland sein (siehe <a href="/2014/10/08/lichtgeschwindigkeit-bleibt-lichtgeschwindigkeit.html">"Lichtgeschwindigkeit bleibt Lichtgeschwindigkeit"</a>). Responsivität war selbstverständlich.
+    </p>
+  </div>
+  <div class="column-2-2">
+    <p>
+    Da es sich um eine statische Webseite handelt wurde auch die neue Version mit <a href="/jekyll/">Jekyll</a> erstellt. Das CSS der Seite wurde von <a href="http://www.kaspertidemann.com/">Kasper Tidemann</a> (<a href="https://twitter.com/kaspertidemann">@kaspertidemann</a>) in Kopenhagen erstellt. Der Source-Code ist auf <a href="https://github.com/amooma/www.amooma.de">github.com/amooma/...</a> einsehbar (gerne dürfen Ideen kopiert werden).
+    </p>
+  </div>
+</div>
+
+<div class="content">
+  <div class="column-2-1">
+    <div class="title">
+      <div></div>
+      <p><span>Alte Version</span></p>
+    </div>
+    <p>
+      <a href="{% asset_path 2015/01/26/screenshot-v1.0.png %}">
+      {% image 2015/01/26/thumbnail-v1.0.png alt="Screenshot der alten Version" width="420" heigth="325" %}</a>
+    </p>
+  </div>
+
+  <div class="column-2-2">
+    <div class="title">
+      <div></div>
+      <p><span>Neue Version</span></p>
+    </div>
+    <p>
+      <a href="{% asset_path 2015/01/26/screenshot-v2.0.png %}">
+      {% image 2015/01/26/thumbnail-v2.0.png alt="Screenshot der alten Version" width="420" heigth="325" %}</a>
+    </p>
+  </div>
+</div>
+
+<div class="content text">
+  <p>
+    Alle HTML-Seiten sind gezippt <strong>kleiner als 14 KB</strong> und dabei ist das CSS komplett inlined. Die neue Seite ist <strong>visually complete in 500 ms</strong> (siehe <a href="http://www.webpagetest.org/result/150126_TG_WND/">webpagetest.org</a>). Das ist nett. Aber noch viel besser ist, das in diesen 500 ms bereits alle wichtigen Sub-Seiten pre-fetched wurden. Hier ein Screenshot des Wasserfalls:
+  </p>
+  <p>
+    {% image 2015/01/26/waterfall.png alt="Wasserfall" width="420" %}
+  </p>
+  <p><strong>Alles nur rosarot?</strong> Nein, unser Freund der Internet Explorer zickt mal wieder rum. Je nach Version werden dort einzelne Icons nicht korrekt dargestellt. Allerdings verwenden nur 7% der Besucher dieser Webseite einen IE und davon wiederum nur ein paar Prozent eine Version, die nicht alles korrekt darstellt. Da wir nur von optischen und nicht von funktionalen Problemen reden, habe ich mich entschlossen mit diesem Problem fürs erste zu leben.</p>
+</div>
