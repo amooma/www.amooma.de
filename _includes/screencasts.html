@@ -31,7 +31,7 @@ To display a table with the title 'Foo' use
       {% endif %}
     </div>
 
-    {% for screencast in site.screencasts %}
+    {% for screencast in site.screencasts reversed %}
       {% assign display_screencast = 0 %}
       {% unless include.tag %}
         {% assign display_screencast = 1 %}
