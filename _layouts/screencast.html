@@ -10,6 +10,7 @@ layout: default
 
   <p>
 {% if page.youtube_video_id %}
+  <a href="https://www.youtube.com/watch?v={{ page.youtube_video_id }}"><img src="http://img.youtube.com/vi/{{ page.youtube_video_id }}/mqdefault.jpg" align="right" alt="Thumbnail of the video." /></a>
   <a href="https://www.youtube.com/watch?v={{ page.youtube_video_id }}">Watch the video of this screencast on YouTube ({{ page.video_length }}).</a>
 {% endif %}
   </p>
