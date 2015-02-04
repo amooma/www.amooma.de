@@ -3,7 +3,9 @@ layout: screencast
 title: "Authentication with Ruby on Rails 4.2"
 lang: en
 date: 2015-02-02 06:00:00
-tags: Rails Ruby
+tags:
+  - Rails
+  - Ruby
 author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de
