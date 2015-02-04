@@ -22,7 +22,7 @@ To display the last two posts from any category use:
       {% for post in posts limit:2 %}
         <div class="column-2-{% cycle '1', '2' %}">
           <div class="post">
-            <div></div>
+            <div>&nbsp;</div>
             <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} <span>{{ post.date | date: "%b %-d, %Y" }}</span></a>
             <p>{{ post.abstract }} <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><br />Lesezeit: {{ post.content | reading_time }}</a></p>
             {% unless include.tag %}
