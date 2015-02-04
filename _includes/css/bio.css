@@ -16,7 +16,7 @@ div.bio {
         top: none;
         width: 200px; } }
     div.bio div.stefan div.photo {
-      background: url("{{ 'photo.jpg' | asset_path }}") no-repeat center center/100% 100%;
+      background: url("{{ 'photo.jpg' | asset_path }}") no-repeat center center / 100% 100%;
       left: 0px;
       height: 167px;
       position: absolute;
