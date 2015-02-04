@@ -8,12 +8,17 @@ layout: default
 
   <p class="meta">{{ page.date | date: "%d.%m.%Y" }}{% if page.author %} by {{ page.author }}{% endif %}{% if page.meta %} &mdash; {{ page.meta }}{% endif %}</p>
 
-  <p>
-{% if page.youtube_video_id %}
-  <a href="https://www.youtube.com/watch?v={{ page.youtube_video_id }}"><img src="http://img.youtube.com/vi/{{ page.youtube_video_id }}/mqdefault.jpg" align="right" alt="Thumbnail of the video." /></a>
-  <a href="https://www.youtube.com/watch?v={{ page.youtube_video_id }}">Watch the video of this screencast on YouTube ({{ page.video_length }}).</a>
-{% endif %}
-  </p>
+  {% if page.youtube_video_id %}
+
+  <p class="screencast-link"><a href="https://www.youtube.com/watch?v={{ page.youtube_video_id }}">Watch the video of this screencast on YouTube ({{ page.video_length }}).</a></p>
+
+  <div class="screencast-video">
+
+    <a href="https://www.youtube.com/watch?v={{ page.youtube_video_id }}"><img src="http://img.youtube.com/vi/{{ page.youtube_video_id }}/mqdefault.jpg" alt="Thumbnail of the video." /></a>
+
+  </div>
+
+  {% endif %}
 
   {{ content }}
 
