@@ -76,10 +76,26 @@ div.content {
   max-width: 900px;
   width: 92%; }
 
+div.content img {
+  max-width: 100%; }
+
+div.content p.center-img {
+  text-align: center;
+}
+
+div.content p.center-img img {
+  max-width: 90%;
+}
+
 div.divider {
   background: #c4c7ca;
   clear: both;
   height: 1px;
+  width: 100%; }
+
+div.content-spacer {
+  clear: both;
+  height: 20px;
   width: 100%; }
 
 div.grey {
