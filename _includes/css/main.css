@@ -174,7 +174,14 @@ pre {
       white-space: normal; }
 
 ul li {
-  list-style-position: inside; }
+  list-style-position: inside;
+  list-style-type: square; }
+
+ul li p {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0px 0px 0px 16px;
+}
 
 /* ### MENU: ### */
 div.menu div.desktop {
