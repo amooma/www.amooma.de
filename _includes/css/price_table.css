@@ -1,0 +1,40 @@
+/* ### PRICE TABLE: ### */
+div.price-table {
+  clear: both;
+  display: table;
+  height: auto;
+  width: 100%; }
+
+div.price-table div.row {
+  display: table-row;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+div.price-table p.header {
+  font-weight: bold;
+}
+
+div.price-table div.item p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+div.price-table div.item:nth-child(even) {
+  background: #eeeeee;
+}
+
+div.price-table div.left, div.price-table div.right {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+div.price-table div.left {
+  text-align: left;
+  width: 55%;
+}
+
+div.price-table div.right {
+  text-align: right;
+  width: 45%;
+}
