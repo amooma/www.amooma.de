@@ -16,7 +16,7 @@ video_length: 14:33 min
 custom_css:
   - blog
   - syntax
-  - iframe
+  - screencast
 ---
 
 This screencast shows how to add a simple password authentication for your Ruby on Rails 4.2 application without using the big shots like Devise or OmniAuth (see [ruby-toolbox.com](https://www.ruby-toolbox.com/categories/rails_authentication) for a list of popular authentication gems).
