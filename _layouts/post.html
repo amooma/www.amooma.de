@@ -11,7 +11,7 @@ layout: default
   {{ content }}
 
   <div class="tags">
-    {% for tag in site.posts[0].tags %}
+    {% for tag in page.tags %}
     <a class="tag" href="#">{{ tag }}</a>
     {% endfor %}
   </div>
