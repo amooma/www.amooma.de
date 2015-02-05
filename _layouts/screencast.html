@@ -28,3 +28,10 @@ layout: default
     {% endfor %}
   </div>
 </div>
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@wintermeyer" />
+<meta name="twitter:title" content="{{ page.title }}{% if page.video_length %} ({{ page.video_length }}){% endif %}" />
+<meta name="twitter:description" content="{{ page.abstract }}" />
+<meta name="twitter:image" content="http://img.youtube.com/vi/{{ page.youtube_video_id }}/mqdefault.jpg" />
+<meta name="twitter:url" content="http://www.amooma.de{{ page.url }}" />
