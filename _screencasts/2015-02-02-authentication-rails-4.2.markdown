@@ -6,6 +6,7 @@ date: 2015-02-02 06:00:00
 tags:
   - Rails
   - Ruby
+  - Authentication
 author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de
@@ -233,7 +234,7 @@ Additionally I add some code to show flash messages if there are any.
 
 **app/views/layouts/application.html.erb**
 
-{% highlight html %}
+{% highlight erb %}
 <div id="user_header">
   <% if current_user %>
     Logged in as <%= current_user.email %>.
@@ -256,7 +257,7 @@ Because we render the flash messages in `application.html.erb` we can delete the
 - **app/views/users/show.html.erb**
 - **app/views/users/index.html.erb**
 
-{% highlight html %}
+{% highlight erb %}
 <p id="notice"><%= notice %></p>
 {% endhighlight %}
 

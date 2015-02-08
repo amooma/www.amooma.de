@@ -6,6 +6,7 @@ date: 2015-01-22 19:00:00
 tags:
   - Rails
   - Ruby
+  - Forms
 author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de
