@@ -3,7 +3,8 @@ layout: post
 title: "Preconnect self"
 lang: en
 date: 2014-09-30 15:00:00
-tags: WebPerf
+tags:
+  - WebPerf
 author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de

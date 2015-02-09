@@ -3,7 +3,8 @@ layout: post
 title: "HTTP/2 - Statusreport: Januar 2015"
 lang: de
 date: 2015-01-28 18:00:00
-tags: WebPerf
+tags:
+  - WebPerf
 author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de

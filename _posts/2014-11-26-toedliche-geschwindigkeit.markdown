@@ -3,7 +3,8 @@ layout: post
 title: "Tödliche Geschwindigkeit"
 lang: de
 date: 2014-11-26 18:45:00
-tags: WebPerf
+tags:
+  - WebPerf
 author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de

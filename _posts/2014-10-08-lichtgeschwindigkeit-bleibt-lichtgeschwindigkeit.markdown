@@ -3,7 +3,8 @@ layout: post
 title: "Lichtgeschwindigkeit bleibt Lichtgeschwindigkeit"
 lang: de
 date: 2014-10-08 09:00:00
-tags: WebPerf
+tags:
+  - WebPerf
 author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de

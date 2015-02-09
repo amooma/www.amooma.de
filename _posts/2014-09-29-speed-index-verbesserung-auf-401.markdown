@@ -3,7 +3,9 @@ layout: post
 title: "Verbesserung des Speed Index auf 401"
 lang: de
 date: 2014-09-29 01:00:00
-tags: AMOOMA WebPerf
+tags:
+  - AMOOMA
+  - WebPerf
 author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de

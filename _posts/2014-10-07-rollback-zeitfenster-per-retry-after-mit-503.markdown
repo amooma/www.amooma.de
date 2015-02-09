@@ -3,7 +3,8 @@ layout: post
 title: "Rollback Zeitfenster per 503 plus Retry-After Header"
 lang: de
 date: 2014-10-07 11:00:00
-tags: SEO
+tags:
+  - SEO
 author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de

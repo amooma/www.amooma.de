@@ -3,7 +3,11 @@ layout: post
 title: "Done is better than perfect!"
 lang: de
 date: 2014-09-23 15:00:00
-tags: AMOOMA CSS HTML WebPerf
+tags:
+  - AMOOMA
+  - CSS
+  - HTML
+  - WebPerf
 author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de

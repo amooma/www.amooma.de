@@ -3,7 +3,9 @@ layout: post
 title: "Ruby 2.2 Time#parse Zeitzonen Problem"
 lang: en
 date: 2015-01-09 18:00:00
-tags: Rails Ruby
+tags:
+  - Rails
+  - Ruby
 author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de
