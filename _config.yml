@@ -24,3 +24,5 @@ collections:
 
 exclude: 
   - README.md
+
+timezone: Europe/Berlin
