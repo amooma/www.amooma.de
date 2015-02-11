@@ -21,3 +21,6 @@ collections:
   screencasts:
     output: true
     permalink: /screencasts/:path/
+
+exclude: 
+  - README.md
