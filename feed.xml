@@ -11,7 +11,22 @@ layout: null
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+
+    {% assign pagesArray = site.emptyArray %}
+    {% for post in site.posts %}
+      {% assign pagesArray = pagesArray | push: post %}
+    {% endfor %}
+    {% for screencast in site.screencasts %}
+      {% assign pagesArray = pagesArray | push: screencast %}
+    {% endfor %}
+    {% assign sorted = pagesArray | sort: "date" %}
+
+    {% assign pagesArray = site.emptyArray %}
+    {% for post in sorted reversed %}
+      {% assign pagesArray = pagesArray | push: post %}
+    {% endfor %}
+
+    {% for post in pagesArray limit:20 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
         <description>{{ post.content | xml_escape }}</description>

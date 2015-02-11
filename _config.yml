@@ -22,7 +22,15 @@ collections:
     output: true
     permalink: /screencasts/:path/
 
-exclude: 
+# What needs to be excluded from the build
+#
+exclude:
   - README.md
 
+# Timezone
+#
 timezone: Europe/Berlin
+
+# Needed e.g. for merging screencasts and posts
+#
+emptyArray: []
