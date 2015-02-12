@@ -24,7 +24,7 @@ To display the last two posts from any category use:
           <div class="post">
             <div>&nbsp;</div>
             <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} <span>{{ post.date | date: "%b %-d, %Y" }}</span></a>
-            <p>{{ post.abstract | truncatewords: 20 }} <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><br />Lesezeit: {{ post.content | reading_time }}</a></p>
+            <p>{{ post.abstract | truncatewords: 16 | truncate: 100 }} <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><br />Lesezeit: {{ post.content | reading_time }}</a></p>
             {% unless include.tag %}
               {% for tag in post.tags %}
                 <a class="tag" href="#">{{ tag }}</a>

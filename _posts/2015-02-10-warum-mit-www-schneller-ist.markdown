@@ -6,7 +6,6 @@ date: 2015-02-10 08:00:00
 tags:
   - WebPerf
   - CDN
-  - AMOOMA
 author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de

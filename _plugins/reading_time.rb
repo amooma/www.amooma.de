@@ -1,6 +1,6 @@
 # Outputs the reading time
 
-# Read this in â€œabout 4 minutesâ€
+# Read this in "about 4 minutes"
 # Put into your _plugins dir in your Jekyll site
 # Usage: Read this in about {{ page.content | reading_time }}
 
@@ -11,7 +11,7 @@ module ReadingTimeFilter
     words = input.split.size;
     minutes = ( words / words_per_minute ).floor
     minutes_label = minutes === 1 ? " Minute" : " Minuten"
-    minutes > 0 ? "etwa #{minutes} #{minutes_label}" : "weniger als 1 Minute"
+    minutes > 0 ? "#{minutes} #{minutes_label}" : "weniger als 1 Minute"
   end
 end
 
