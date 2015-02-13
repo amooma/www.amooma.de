@@ -26,6 +26,8 @@ collections:
 #
 exclude:
   - README.md
+  - bin/
+  - gfx/
 
 # Timezone
 #
