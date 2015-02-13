@@ -14,7 +14,7 @@ custom_css:
   - blog
 ---
 
-Our new AMOOMA homepage went online on the 23rd of January 2015. It did take many months of work to get their. I want to share the blueprint for it so that you can save time for your own super fast homepage. *[The code is available on Github](github.com/amooma/www.amooma.de). Feel free to copy any idea!*
+Our new AMOOMA homepage went online on the 23rd of January 2015. It did take many months of work to get their. I want to share the blueprint for it so that you can save time for your own super fast homepage. *[The code is available on Github](http://github.com/amooma/www.amooma.de). Feel free to copy any idea!*
 
 ## Background
 
@@ -34,7 +34,9 @@ We could have just written plain old HTML files but who wants that?! It is nice 
 
 ## Webserver
 
-I have been a happy [nginx](http://nginx.org/) user for many years now. So this page gets delivered by a vanilla current nginx on a vanilla Debian 7 server. Our webserver is located in Frankfurt which is pretty much perfect for Germany. Not so much for Sydney but I'll come back to that later.
+I have been a happy [nginx](http://nginx.org/) user for many years now. It is said that it has an edge over [Apache](http://httpd.apache.org/) for delivering static pages. I would not start a religious war about that. Both are fine webservers. On a sidenote: I'm looking forward to a stable [H2O](https://github.com/h2o/h2o) which is looking quite promising for future HTTP/2 use.
+
+Long story short: This page gets delivered by a vanilla current nginx on a vanilla Debian 7 server. Our webserver is located in Frankfurt which is pretty much perfect for Germany. Not so much for Sydney but I'll come back to that later.
 
 ## CSS (Framework?)
 
@@ -185,6 +187,8 @@ Anyone with knowledge in WebPerformance will argue: "That is all fine and dandy 
 
 Frugal companies might argue that a CDN is expensive. According to my experience this is not true (any more!). Big companies can save more by reducing their server farm and small companies don't even hit the 50 USD minimum to trigger the invoice by Fastly ([their pricelist](http://www.fastly.com/pricing/)).
 
+A nice side effect of using a CDN like Fastly: Your page is save from any sort of [Slashdot effect](http://en.wikipedia.org/wiki/Slashdot_effect).
+
 ## Images
 
 It should be obvious but you have no idea how often I consult new clients who don't optimize their images. Optimizing images is a craft of it's own and this is not the place to solve this problem. So my advice for optimizing images if you don't have time and knowledge to do it optimal in the first place: Go to [kraken.io](https://kraken.io/) and use their service.
@@ -193,8 +197,12 @@ It should be obvious but you have no idea how often I consult new clients who do
 
 Because we do the heavy lifting within the 14 KB limit we have little benefit from using SDPY or HTTP/2. The needed use of SSL would actually worsen the first download time.
 
-But for many of our clients HTTP/2 is the future because they use more and bigger files. 2015 will become a very interesting year regarding this topic.
+Truth be told: We might be able to safe about 50 - 100ms by the use of HTTP/2 for our index page if there would be a solution to push the two images on that page. But right now neither nginx nor Apache support this feature of HTTP/2 and I don't have the confidence in H2O yet.
 
-## More?
+I have the feeling that Fastly is cooking a solution for this. But they keep their cards close to their chest. I'll keep you in the loop if there is an update or new technoligy.
+
+**2015 will become a very interesting year regarding HTTP/2.**
+
+## Questions?
 
 Please feel free to contact me if you have a specific question or feedback. Obviously I'm also happy to offer consulting.
