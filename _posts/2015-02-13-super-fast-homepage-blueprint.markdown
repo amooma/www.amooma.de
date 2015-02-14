@@ -16,11 +16,15 @@ custom_css:
 
 Our new AMOOMA homepage went online on the 23rd of January 2015. It did take many months of work to get their. I want to share the blueprint for it so that you can save time for your own super fast homepage. *[The code is available on Github](http://github.com/amooma/www.amooma.de). Feel free to copy any idea!*
 
-## Background
+## WebPerformance Time Budget
 
 AMOOMA GmbH is a small consulting and training company which is based in Germany. Our bread and butter business is in Germany but every now and then we have a customer off a total different continent. Our homepage informs a potential customer of our portfolio, hosts screencasts and this blog.
 
 It represents us and what we can do. Because we offer WebPerformance consulting **it should load in under 1,000 ms** on any devise from Frankfurt to Sydney.
+
+But let's don't fool ourself. "Any devise" is not as important as any network. I will settle for 2s on a bad G3 network. Here is a demo of an iPhone 6 accessing www.amooma.de on such a network. Animated GIFs are a bit tricky timing wise. You'll have to trust me or [download the original MOV file]({% asset_path "2015/02/13/iphone-g3-www.amooma.de-landscape-demo.mov" %}) that this is 2 seconds.
+
+{% image "2015/02/13/iphone-g3-www.amooma.de-landscape-demo.gif" alt="G3 Demo" %}
 
 ## Ruby on Rails vs. Ember vs. Jekyll
 
@@ -65,6 +69,10 @@ _includes/css
 It's a set of small CSS files which get inlined on demand. Yes, we do inline all needed CSS. We don't use a single (big) CSS file which get's downloaded separately. With this tactic we get all HTML and all CSS the bowser needs to render the webpage with the first 14 KB payload frame.
 
 If you are not familiar with the 14 KB aka TCP Slow-Start problem: Read [High Performance Browser Networking](http://chimera.labs.oreilly.com/books/1230000000545) by [Ilya Grigorik](https://www.igvita.com/). Read it now because otherwise you will not understand the gravity of those 14 KB.
+
+## No extra Web Font
+
+Web Fonts are tricky webperformance wise. It takes time to download and it takes time to render. Take a minute and browser through our [Github repository](http://github.com/amooma/www.amooma.de) to see that we actually started with a web font in the early versions but decided against it in the optimization process. With our very ambitious time budget an extra web font could have been a deal breaker and it wasn't worth it.
 
 ## 14 KB max size. Any page. Seriously!?
 
