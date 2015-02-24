@@ -1,6 +1,6 @@
 ---
 layout: screencast
-title: "Fragement Caching with Ruby on Rails 4.2"
+title: "Fragment Caching with Ruby on Rails 4.2"
 lang: en
 date: 2015-02-24 21:00:00
 tags:
@@ -9,8 +9,8 @@ tags:
 author: Stefan Wintermeyer
 email: stefan.wintermeyer@amooma.de
 homepage: http://www.wintermeyer.de
-abstract: "A beginner's guide to use fragement caching in a Ruby on Rails 4.2 application."
-excerpt: "Screencast: A beginner's guide to use fragement caching in a Ruby on Rails 4.2 application."
+abstract: "A beginner's guide to use fragment caching in a Ruby on Rails 4.2 application."
+excerpt: "Screencast: A beginner's guide to use fragment caching in a Ruby on Rails 4.2 application."
 youtube_video_id: l-T__mBnOAA
 video_length: 19:30 min
 custom_css:
@@ -19,7 +19,7 @@ custom_css:
   - screencast
 ---
 
-Fragement caching is the first caching mechanism most Rails developer use. Many times 2-3 lines of code will result in a much faster application. But it is tricky to debug and can become a resource grave if not used well.
+Fragment caching is the first caching mechanism most Rails developer use. Many times 2-3 lines of code will result in a much faster application. But it is tricky to debug and can become a resource grave if not used well.
 
 ## Our Sandbox Rails Application
 
