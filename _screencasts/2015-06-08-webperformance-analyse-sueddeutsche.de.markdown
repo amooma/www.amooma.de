@@ -1,6 +1,6 @@
 ---
 layout: screencast
-title: "WebPerformance Analyse von www.sueddeutsche.de"
+title: "WebPerformance Tipps für www.sueddeutsche.de"
 lang: de
 date: 2015-06-08 09:00:00
 tags:
