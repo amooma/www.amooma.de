@@ -18,7 +18,7 @@ custom_css:
   - screencast
 ---
 
-In dieser Woche werde ich täglich zu jeweils einer großen deutschen Nachrichten-Webseiten eine kurze (5-10 Minuten) Analyse zur WebPerformance veröffentlichen.
+In dieser Woche veröffentliche ich täglich zu jeweils einer großen deutschen Nachrichten-Webseiten eine kurze (5-10 Minuten) Analyse zur WebPerformance. Alle Screencasts habe ich am Sonntag (07.06.2015) innerhalb von 2 Stunden aufgenommen.
 
 Heute fange ich mit [sueddeutsche.de](http://www.sueddeutsche.de) an.
 
