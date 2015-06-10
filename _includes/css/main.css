@@ -182,7 +182,9 @@ ul {
   list-style-position: inside;
   list-style-type: square;
   padding: 0px;
-  margin: 0px; }
+  margin: 0px;
+  margin-bottom: 18px;
+  }
 
 ul li {
   margin: 0px; padding: 0px; top: 0px; left: 0px;
