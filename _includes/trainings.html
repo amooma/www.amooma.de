@@ -1,0 +1,72 @@
+{% assign counter=0 %}
+{% for training in site.data.trainings %}
+  {% if include.tag %}
+    {% if training.tags contains include.tag %}
+      {% assign counter=counter | plus:1 %}
+    {% endif %}
+  {% else %}
+    {% assign counter=counter | plus:1 %}
+  {% endif %}
+{% endfor %}
+
+{% if counter > 0 %}
+  <div class="content list">
+    <div class="title">
+      <div></div>
+      {% if include.title %}
+        <p><span>{{ include.title }}</span></p>
+      {% else %}
+        <p><span>Termine</span></p>
+      {% endif %}
+    </div>
+
+    {% for training in site.data.trainings reversed %}
+      {% assign display_trainings = 0 %}
+      {% unless include.tag %}
+        {% assign display_trainings = 1 %}
+      {% elsif training.tags contains include.tag %}
+        {% assign display_trainings = 1 %}
+      {% endunless %}
+
+      {% if display_trainings == 1 %}
+        <div class="item article">
+          <div class="options">
+            {% for tag in training.tags %}
+              <a class="tag" href="#">{{ tag }}</a>
+            {% endfor %}
+          </div>
+
+          <div class="columns">
+            <div class="column name">
+              <p>
+                {% if page.url == training.url %}
+                  <strong>{{ training.name }}</strong>
+                {% else %}
+                  <a href="{{ training.url }}">{{ training.name }}</a>
+                {% endif %}  
+              </p>
+            </div>
+
+            <div class="column name">
+              {% for termin in training.trainings %}
+                <p>{{ termin.date | date: "%-d.%m.%Y" }} - {{ termin.location }}</p>
+              {% endfor %}
+            </div>
+
+            <div class="column">
+                <p>Dauer: {{ training.duration }}
+                {% if training.duration == 1 %}
+                  Tag
+                {% else %}
+                  Tage
+                {% endif %}
+                 </p>
+            </div>
+
+          </div>
+          <div class="clear"></div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}

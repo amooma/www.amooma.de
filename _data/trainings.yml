@@ -1,0 +1,23 @@
+- name: WebPerformance
+  excerpt: "Fussgängerzone oder Autobahn?"
+  url: /trainings/webperformance.html
+  duration: 1
+  trainings:
+    - date: 2015-07-22
+      location: Berlin
+    - date: 2015-07-29
+      location: München
+  tags:
+    - WebPerf
+
+- name: Ruby on Rails 4.2 und 5.0
+  excerpt: "Ruby on Rails 4.2 und 5.0 Training"
+  url: /trainings/ruby-on-rails.html
+  duration: 2
+  trainings:
+    - date: 2015-07-20
+      location: Berlin
+    - date: 2015-07-27
+      location: München
+  tags:
+    - Rails
