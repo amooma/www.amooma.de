@@ -3,10 +3,8 @@
   url: /trainings/webperformance.html
   duration: 1
   trainings:
-    - date: 2015-07-22
+    - date: 2015-08-19
       location: Berlin
-    - date: 2015-07-29
-      location: München
   tags:
     - WebPerf
 
@@ -15,9 +13,7 @@
   url: /trainings/ruby-on-rails.html
   duration: 2
   trainings:
-    - date: 2015-07-20
+    - date: 2015-08-17
       location: Berlin
-    - date: 2015-07-27
-      location: München
   tags:
     - Rails
