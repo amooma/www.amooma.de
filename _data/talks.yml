@@ -1,3 +1,14 @@
+- date: 21.08.2015
+  conference: FrOSCon
+  conference_url: http://www.froscon.de/
+  city: Sankt Augustin
+  country: Deutschland
+  title: WebPerformance - Autobahn oder Fussgängerzone
+  slides_url: https://speakerdeck.com/wintermeyer/webperformance-autobahn-oder-fussgangerzone
+  lang: de
+  tags:
+    - WebPerf
+
 - date: 11.11.2014
   conference: ux congress
   conference_url: http://www.ux-congress.com/
