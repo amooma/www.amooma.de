@@ -31,3 +31,5 @@ svgo test.svg test.min.svg
 You find the Github repository at [https://github.com/svg/svgo](https://github.com/svg/svgo) and there's an online version to get a feeling for it at  [https://jakearchibald.github.io/svgomg/](https://jakearchibald.github.io/svgomg/).
 
 Many WebPerformance professionals use SVG files to save space. Now you can even save more space by minifying those files. Which was the first thing I did for www.amooma.de. Have a look at the [Github commit](https://github.com/amooma/www.amooma.de/commit/cb93cfbf69f04c12fbf1331f709b29f7bd04ede5) to see the difference.
+
+Update: Nick Bruun [@NickBruun](https://twitter.com/NickBruun) who has done a lot of work with SVGs at [Iconfinder](https://www.iconfinder.com/) told me that [SVGO does botch SVG files](https://twitter.com/NickBruun/status/635812664279736320) in some cases. So you want to double check your results. I haven't had any problems yet but Nick is a guy who knows what he's doing.
