@@ -1,6 +1,14 @@
 - publication: "iX Magazin"
   publication_url: http://www.heise.de/ix/
   publisher: Heise
+  issue_number: "9/2015"
+  title: "Taxi ins Web - Was HTTP/2 für den Webverkehr bedeutet"
+  article_url: http://www.heise.de/ix/inhalt/2015/9/116/
+  tags:
+    - WebPerf
+- publication: "iX Magazin"
+  publication_url: http://www.heise.de/ix/
+  publisher: Heise
   issue_number: "8/2015"
   title: "WebPerformance - Das Laden von Webseiten optimieren"
   article_url: http://www.heise.de/ix/inhalt/2015/8/102/
