@@ -11,7 +11,7 @@
 
 {% if counter > 0 %}
   <div class="content list">
-    <div class="title">
+    <div class="title title-margin">
       <div></div>
       {% if include.title %}
         <p><span>{{ include.title }}</span></p>
@@ -43,7 +43,7 @@
                   <strong>{{ training.name }}</strong>
                 {% else %}
                   <a href="{{ training.url }}">{{ training.name }}</a>
-                {% endif %}  
+                {% endif %}
               </p>
             </div>
 
