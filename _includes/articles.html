@@ -58,7 +58,11 @@ To display a table with the title 'Foo' use
 
           <div class="columns">
             <div class="column name">
+              {% if article.article_url %}
+              <p><a href="{{ article.article_url }}">{{ article.title }}</a></p>
+              {% else %}
               <p><a href="{{ article.publication_url }}">{{ article.title }}</a></p>
+              {% endif %}
             </div>
 
             <div class="column conference">
