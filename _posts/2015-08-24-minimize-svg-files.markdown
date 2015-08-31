@@ -32,4 +32,6 @@ You find the Github repository at [https://github.com/svg/svgo](https://github.c
 
 Many WebPerformance professionals use SVG files to save space. Now you can even save more space by minifying those files. Which was the first thing I did for www.amooma.de. Have a look at the [Github commit](https://github.com/amooma/www.amooma.de/commit/cb93cfbf69f04c12fbf1331f709b29f7bd04ede5) to see the difference.
 
-Update: Nick Bruun [@NickBruun](https://twitter.com/NickBruun) who has done a lot of work with SVGs at [Iconfinder](https://www.iconfinder.com/) told me that [SVGO does botch SVG files](https://twitter.com/NickBruun/status/635812664279736320) in some cases. So you want to double check your results. I haven't had any problems yet but Nick is a guy who knows what he's doing.
+**Update:** Nick Bruun [@NickBruun](https://twitter.com/NickBruun) who has done a lot of work with SVGs at [Iconfinder](https://www.iconfinder.com/) told me that [SVGO does botch SVG files](https://twitter.com/NickBruun/status/635812664279736320) in some cases. So you want to double check your results. I haven't had any problems yet but Nick is a guy who knows what he's doing.
+
+**2nd Update:** A couple of days after Nick [tweeted about potential problems with SVGO](https://twitter.com/NickBruun/status/635812664279736320) the maintainer of SVGO - Lev Solntsev - [contacted both of us offering bugfixes for any problem](https://twitter.com/ruGreLI/status/637611382767226880). You gotta love open source for this. :-)
