@@ -35,3 +35,9 @@ Auch bei dieser Seite gibt ein paar Low-Hanging-Fruits, die man sehr schnell mit
 **Ich bin aber davon überzeugt, das man diese Seite mit ein wenig Arbeit richtig schnell bekommen kann. Das Potential ist auf jeden Fall da.**
 
 {% image 2015/06/10/filmstrip-view-zeit.de.png class="pure-img-responsive" alt="Filmstrip des Seitenaufbaus www.zeit.de" %}
+
+## zeit.de Relaunch
+
+Ein paar Monate nach diesem Posting wurde die Webseite von zeit.de mit einem neuen Layout relaunched. Dazu habe ich ebenfalls ein Screencast veröffentlicht: [youtube.com/watch?v=s4MyvRzSdZU](https://www.youtube.com/watch?v=s4MyvRzSdZU)
+
+Die Webpagetest Analyse dazu ist hier: [webpagetest.org/result/151001_KP_CBE/](http://www.webpagetest.org/result/151001_KP_CBE/)
