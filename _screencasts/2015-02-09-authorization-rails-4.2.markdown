@@ -104,7 +104,7 @@ Lastly we have to change the `create` method in the same controller to build a n
 {% highlight ruby %}
 # POST /posts
 def create
-  @post = current_user.build.new(post_params)
+  @post = current_user.posts.build.new(post_params)
 
   if @post.save
     redirect_to @post, notice: 'Post was successfully created.'
