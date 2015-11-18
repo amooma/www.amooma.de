@@ -55,7 +55,7 @@
                   "@type": "Event",
                   "name": "{{ training.name }}",
                   "startDate" : "{{ termin.date | date: "%Y-%m-%-dT00:00" }}",
-                  "url" : "{{ training.url }}",
+                  "url" : "http://www.amooma.de{{ training.url }}",
                   "location" : {
                     "@type" : "Place",
                     "name" : "{{ termin.location }}",
@@ -65,7 +65,7 @@
                     "@id":"#Offer",
                     "@type":"Offer",
                     "priceCurrency":"EUR",
-                    "price":"{{ training.price }}",
+                    "price":"{{ training.price }}"
                   }
                 }
                 </script>
