@@ -3,6 +3,7 @@
 _site
 _drafts
 .sass-cache
+.asset-cache
 
 # OS X
 #
