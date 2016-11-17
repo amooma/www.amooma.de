@@ -3,12 +3,10 @@
   url: /trainings/webperformance.html
   duration: 1
   trainings:
-    - date: 2015-12-02
+    - date: 2016-12-05
       location: Berlin
-    - date: 2015-12-16
-      location: Köln
-    - date: 2016-01-20
-      location: München
+    - date: 2016-12-07
+      location: Koblenz
   price: 885
   tags:
     - WebPerf
@@ -18,12 +16,21 @@
   url: /trainings/ruby-on-rails.html
   duration: 2
   trainings:
-    - date: 2015-11-30
+    - date: 2016-12-01
       location: Berlin
-    - date: 2015-12-14
-      location: Köln
-    - date: 2016-01-18
-      location: München
   price: 975
   tags:
     - Rails
+
+- name: Phoenix Framework
+  excerpt: "Phoenix Anfänger Training"
+  url: /trainings/phoenix.html
+  duration: 2
+  trainings:
+    - date: 2017-01-09
+      location: Berlin
+    - date: 2017-01-16
+      location: Koblenz
+  price: 1.200
+  tags:
+    - Phoenix

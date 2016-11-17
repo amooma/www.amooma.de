@@ -1,3 +1,15 @@
+- date: 21.08.2016
+  conference: FrOSCon
+  conference_url: https://programm.froscon.de/2016/events/1790.html
+  city: Sankt Augustin
+  country: Deutschland
+  title: Phoenix Framework
+  video_url: https://www.youtube.com/watch?v=QkcU83d0sWM
+  length: "41:13"
+  lang: de
+  tags:
+    - Phoenix
+
 - date: 21.08.2015
   conference: FrOSCon
   conference_url: http://www.froscon.de/
