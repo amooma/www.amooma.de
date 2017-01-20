@@ -3,22 +3,20 @@
   url: /trainings/webperformance.html
   duration: 1
   trainings:
-    - date: 2016-12-05
-      location: Berlin
     - date: 2016-12-07
       location: Koblenz
-  price: 885
+  price: 985
   tags:
     - WebPerf
 
-- name: Ruby on Rails 4.2 und 5.0
-  excerpt: "Ruby on Rails 4.2 und 5.0 Training"
+- name: Ruby on Rails 5.0
+  excerpt: "Ruby on Rails 5.0 Training"
   url: /trainings/ruby-on-rails.html
   duration: 2
   trainings:
-    - date: 2016-12-01
-      location: Berlin
-  price: 975
+    - date: 2017-03-15
+      location: Koblenz
+  price: 985
   tags:
     - Rails
 
@@ -27,9 +25,7 @@
   url: /trainings/phoenix.html
   duration: 2
   trainings:
-    - date: 2017-01-09
-      location: Berlin
-    - date: 2017-01-16
+    - date: 2017-03-21
       location: Koblenz
   price: 1.200
   tags:
